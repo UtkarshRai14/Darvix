@@ -1,0 +1,480 @@
+{
+  "collection": "health_in",
+  "name": "Nivaran Health Insurance (India)",
+  "kb_version": 1,
+  "generated_at": "2026-10-01T19:09:29+00:00",
+  "totals": {
+    "sources": 17,
+    "sources_failed": 2,
+    "sources_excluded": 1,
+    "records": 85,
+    "active": 76,
+    "duplicates_removed": 6,
+    "superseded_conflicts": 1,
+    "quarantined": 1,
+    "obsolete_removed": 1,
+    "records_with_pii_redacted": 3,
+    "pii_entities_redacted": {
+      "EMAIL": 2,
+      "PHONE": 2,
+      "NAME": 3
+    },
+    "records_changed_this_run": 0,
+    "records_removed_this_run": 0
+  },
+  "categories": {
+    "company": 5,
+    "product": 14,
+    "qualification": 8,
+    "policy": 8,
+    "faq": 14,
+    "claims": 4,
+    "partnership_benefits": 4,
+    "testimonial": 3,
+    "form": 1,
+    "pricing": 7,
+    "objection": 8
+  },
+  "taxonomy": {
+    "product": "Plan features, benefits, riders and options",
+    "policy": "Coverage terms: waiting periods, exclusions, co-payment, grace/lapse, penalties, cancellation",
+    "qualification": "Eligibility, underwriting and entry rules",
+    "pricing": "Premiums, discounts, payment modes and payment channels",
+    "claims": "Cashless/reimbursement claims, grievances",
+    "faq": "Customer frequently asked questions",
+    "objection": "Objection-handling guidance for agents",
+    "form": "Application forms and required details",
+    "referral": "Referral and handoff processes",
+    "partnership_benefits": "Branch partner programme",
+    "company": "Company overview",
+    "testimonial": "Customer stories (marketing)"
+  },
+  "sources": [
+    {
+      "source_id": "web_home",
+      "path": "website/index.html",
+      "type": "html",
+      "status": "ok",
+      "sections": 5,
+      "records": 5,
+      "boilerplate_removed": 10,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": [
+        "<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(argume",
+        "<style> .hero{padding:40px}",
+        "<header> Nivaran Health Home Essential Family Floater Senior Care Claims FAQ Become a Par",
+        "<> ",
+        "<footer> About us | Careers | Privacy policy | Terms of use | Sitemap Follow us on Facebo",
+        "[cookie-banner cookie-consent] We use cookies to improve your experience. Accept all Manage preferences"
+      ]
+    },
+    {
+      "source_id": "web_essential",
+      "path": "website/essential.html",
+      "type": "html",
+      "status": "ok",
+      "sections": 6,
+      "records": 6,
+      "boilerplate_removed": 5,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": [
+        "<header> Nivaran Health Home Essential Family Floater Senior Care Claims FAQ",
+        "<> ",
+        "<footer> About us | Privacy policy © 2026 Nivaran Health Insurance Ltd. All rights reserv",
+        "[cookie-banner] We use cookies to improve your experience. Accept all",
+        "[breadcrumb] Home > Products > Essential"
+      ]
+    },
+    {
+      "source_id": "web_family_floater",
+      "path": "website/family-floater.html",
+      "type": "html",
+      "status": "ok",
+      "sections": 8,
+      "records": 8,
+      "boilerplate_removed": 8,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": [
+        "<script> ",
+        "<header> Nivaran Health Home Essential Family Floater Senior Care Claims FAQ",
+        "<> ",
+        "<footer> About us | Privacy policy | Terms of use © 2026 Nivaran Health Insurance Ltd. Al",
+        "[cookie-banner] We use cookies to improve your experience. Accept all",
+        "[breadcrumb] Home > Products > Family Floater"
+      ]
+    },
+    {
+      "source_id": "web_senior_care",
+      "path": "website/senior-care.html",
+      "type": "html",
+      "status": "ok",
+      "sections": 7,
+      "records": 7,
+      "boilerplate_removed": 5,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": [
+        "<header> Nivaran Health Home Essential Family Floater Senior Care Claims FAQ",
+        "<> ",
+        "<footer> About us | Privacy policy © 2026 Nivaran Health Insurance Ltd. All rights reserv",
+        "[cookie-banner] We use cookies to improve your experience. Accept all",
+        "[breadcrumb] Home > Products > Senior Care"
+      ]
+    },
+    {
+      "source_id": "web_faq",
+      "path": "website/faq.html",
+      "type": "html",
+      "status": "ok",
+      "sections": 14,
+      "records": 13,
+      "boilerplate_removed": 4,
+      "notes": [
+        "dropped trivial section: Frequently asked questions"
+      ],
+      "issues": [],
+      "boilerplate_examples": [
+        "<header> Nivaran Health Home Claims FAQ Contact",
+        "<> ",
+        "<footer> About us | Privacy policy | Grievance redressal © 2026 Nivaran Health Insurance ",
+        "[cookie-banner] We use cookies to improve your experience. Accept all"
+      ]
+    },
+    {
+      "source_id": "web_faq_archive_2024",
+      "path": "website/faq-archive-2024.html",
+      "type": "html",
+      "status": "ok",
+      "sections": 7,
+      "records": 6,
+      "boilerplate_removed": 3,
+      "notes": [
+        "dropped trivial section: FAQs"
+      ],
+      "issues": [],
+      "boilerplate_examples": [
+        "<header> Nivaran Health Home FAQ",
+        "<> ",
+        "<footer> © 2024 Nivaran Health Insurance Ltd. All rights reserved."
+      ]
+    },
+    {
+      "source_id": "web_claims",
+      "path": "website/claims.html",
+      "type": "html",
+      "status": "ok",
+      "sections": 4,
+      "records": 4,
+      "boilerplate_removed": 4,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": [
+        "<header> Nivaran Health Home Claims FAQ",
+        "<> ",
+        "<footer> © 2026 Nivaran Health Insurance Ltd. All rights reserved.",
+        "[cookie-banner] We use cookies to improve your experience. Accept all"
+      ]
+    },
+    {
+      "source_id": "web_partners",
+      "path": "website/partners.html",
+      "type": "html",
+      "status": "ok",
+      "sections": 4,
+      "records": 4,
+      "boilerplate_removed": 3,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": [
+        "<header> Nivaran Health Home Become a Partner",
+        "<> ",
+        "<footer> © 2026 Nivaran Health Insurance Ltd. All rights reserved."
+      ]
+    },
+    {
+      "source_id": "web_testimonials",
+      "path": "website/testimonials.html",
+      "type": "html",
+      "status": "ok",
+      "sections": 3,
+      "records": 3,
+      "boilerplate_removed": 3,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": [
+        "<header> Nivaran Health Home Customer stories",
+        "<> ",
+        "<footer> © 2026 Nivaran Health Insurance Ltd. All rights reserved."
+      ]
+    },
+    {
+      "source_id": "form_proposal",
+      "path": "forms/proposal-form.html",
+      "type": "form",
+      "status": "ok",
+      "sections": 1,
+      "records": 1,
+      "boilerplate_removed": 0,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": []
+    },
+    {
+      "source_id": "tbl_premium_chart",
+      "path": "tables/indicative-premium-chart.csv",
+      "type": "csv",
+      "status": "ok",
+      "sections": 4,
+      "records": 6,
+      "boilerplate_removed": 0,
+      "notes": [
+        "standardised columns: {'Plan Name': 'plan', 'Members Covered': 'members', 'Age Band (eldest member)': 'age_band', 'Sum Assured (Rs.)': 'sum_insured', 'Annual Premium (Rs.) excl GST': 'annual_premium'}",
+        "dropped 1 duplicate table row(s)"
+      ],
+      "issues": [],
+      "boilerplate_examples": []
+    },
+    {
+      "source_id": "pdf_brochure_2026",
+      "path": "pdfs/product-brochure-2026.pdf",
+      "type": "pdf",
+      "status": "ok",
+      "sections": 8,
+      "records": 8,
+      "boilerplate_removed": 4,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": [
+        "p1 header/footer: Nivaran Health Insurance | Retail Health Product Brochure 2026",
+        "p1 header/footer: UIN NIVHLIP26001V012526 | Read the policy wording carefully before concluding a sale | Pag",
+        "p2 header/footer: Nivaran Health Insurance | Retail Health Product Brochure 2026",
+        "p2 header/footer: UIN NIVHLIP26001V012526 | Read the policy wording carefully before concluding a sale | Pag"
+      ]
+    },
+    {
+      "source_id": "pdf_underwriting_v4_2",
+      "path": "pdfs/underwriting-guidelines-v4.2.pdf",
+      "type": "pdf",
+      "status": "ok",
+      "sections": 6,
+      "records": 6,
+      "boilerplate_removed": 2,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": [
+        "p1 header/footer: INTERNAL - Retail Health Underwriting Guidelines v4.2",
+        "p1 header/footer: INTERNAL - Underwriting Guidelines v4.2 - Effective 1st April 2026 | Page 1 of 1"
+      ]
+    },
+    {
+      "source_id": "pdf_claim_form_scan",
+      "path": "pdfs/scanned-claim-form.pdf",
+      "type": "pdf",
+      "status": "failed",
+      "sections": 0,
+      "records": 0,
+      "boilerplate_removed": 0,
+      "notes": [],
+      "issues": [
+        "no extractable text layer (likely a scanned image); OCR required"
+      ]
+    },
+    {
+      "source_id": "pdf_rate_card_2025",
+      "path": "pdfs/rate-card-2025-corrupt.pdf",
+      "type": "pdf",
+      "status": "failed",
+      "sections": 0,
+      "records": 0,
+      "boilerplate_removed": 0,
+      "notes": [],
+      "issues": [
+        "unreadable PDF (PdfminerException: Unexpected EOF)"
+      ]
+    },
+    {
+      "source_id": "playbook_objections",
+      "path": "playbooks/objection-handling.md",
+      "type": "markdown",
+      "status": "ok",
+      "sections": 8,
+      "records": 8,
+      "boilerplate_removed": 0,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": []
+    },
+    {
+      "source_id": "crm_call_notes",
+      "path": "internal/crm-call-notes-export.txt",
+      "type": "text",
+      "status": "excluded",
+      "sections": 0,
+      "records": 0,
+      "boilerplate_removed": 0,
+      "notes": [
+        "CRM call-note export: customer records, not business knowledge"
+      ],
+      "issues": [],
+      "pii_found": {
+        "EMAIL": 1,
+        "PAN": 1,
+        "AADHAAR": 1,
+        "PHONE": 3,
+        "DOB": 1,
+        "NAME": 2
+      }
+    }
+  ],
+  "dedup_events": [
+    {
+      "type": "duplicate",
+      "kept": "kb_company_home_005",
+      "dropped": "kb_product_ess_006",
+      "jaccard": 1.0,
+      "containment": 1.0,
+      "kept_source": "web_home",
+      "dropped_source": "web_essential"
+    },
+    {
+      "type": "duplicate",
+      "kept": "kb_company_home_005",
+      "dropped": "kb_product_ff_008",
+      "jaccard": 1.0,
+      "containment": 1.0,
+      "kept_source": "web_home",
+      "dropped_source": "web_family_floater"
+    },
+    {
+      "type": "duplicate",
+      "kept": "kb_company_home_005",
+      "dropped": "kb_product_sc_007",
+      "jaccard": 1.0,
+      "containment": 1.0,
+      "kept_source": "web_home",
+      "dropped_source": "web_senior_care"
+    },
+    {
+      "type": "duplicate",
+      "kept": "kb_faq_faq_001",
+      "dropped": "kb_faq_faqold_001",
+      "jaccard": 1.0,
+      "containment": 1.0,
+      "kept_source": "web_faq",
+      "dropped_source": "web_faq_archive_2024"
+    },
+    {
+      "type": "duplicate",
+      "kept": "kb_faq_faq_002",
+      "dropped": "kb_faq_faqold_002",
+      "jaccard": 0.82,
+      "containment": 0.92,
+      "kept_source": "web_faq",
+      "dropped_source": "web_faq_archive_2024"
+    },
+    {
+      "type": "conflict",
+      "kept": "kb_faq_faq_003",
+      "dropped": "kb_faq_faqold_003",
+      "jaccard": 0.66,
+      "containment": 0.82,
+      "kept_source": "web_faq",
+      "dropped_source": "web_faq_archive_2024"
+    },
+    {
+      "type": "duplicate",
+      "kept": "kb_faq_faq_005",
+      "dropped": "kb_faq_faqold_004",
+      "jaccard": 0.62,
+      "containment": 1.0,
+      "kept_source": "web_faq",
+      "dropped_source": "web_faq_archive_2024"
+    }
+  ],
+  "flagged_records": [
+    {
+      "record_id": "kb_product_ess_006",
+      "status": "duplicate",
+      "flags": [
+        "duplicate_of:kb_company_home_005"
+      ],
+      "source": "data/raw/health_in/website/essential.html"
+    },
+    {
+      "record_id": "kb_product_ff_008",
+      "status": "duplicate",
+      "flags": [
+        "duplicate_of:kb_company_home_005"
+      ],
+      "source": "data/raw/health_in/website/family-floater.html"
+    },
+    {
+      "record_id": "kb_product_sc_007",
+      "status": "duplicate",
+      "flags": [
+        "duplicate_of:kb_company_home_005"
+      ],
+      "source": "data/raw/health_in/website/senior-care.html"
+    },
+    {
+      "record_id": "kb_faq_faq_003",
+      "status": "active",
+      "flags": [
+        "supersedes:kb_faq_faqold_003"
+      ],
+      "source": "data/raw/health_in/website/faq.html"
+    },
+    {
+      "record_id": "kb_faq_faqold_001",
+      "status": "duplicate",
+      "flags": [
+        "duplicate_of:kb_faq_faq_001"
+      ],
+      "source": "data/raw/health_in/website/faq-archive-2024.html"
+    },
+    {
+      "record_id": "kb_faq_faqold_002",
+      "status": "duplicate",
+      "flags": [
+        "duplicate_of:kb_faq_faq_002"
+      ],
+      "source": "data/raw/health_in/website/faq-archive-2024.html"
+    },
+    {
+      "record_id": "kb_faq_faqold_003",
+      "status": "superseded",
+      "flags": [
+        "conflict_with:kb_faq_faq_003 (numbers differ: ['15', '30'])"
+      ],
+      "source": "data/raw/health_in/website/faq-archive-2024.html"
+    },
+    {
+      "record_id": "kb_faq_faqold_004",
+      "status": "duplicate",
+      "flags": [
+        "duplicate_of:kb_faq_faq_005"
+      ],
+      "source": "data/raw/health_in/website/faq-archive-2024.html"
+    },
+    {
+      "record_id": "kb_faq_faqold_006",
+      "status": "obsolete",
+      "flags": [
+        "obsolete_content"
+      ],
+      "source": "data/raw/health_in/website/faq-archive-2024.html"
+    },
+    {
+      "record_id": "kb_qualification_uw_002",
+      "status": "quarantined",
+      "flags": [
+        "implausible_age: '755 years'"
+      ],
+      "source": "data/raw/health_in/pdfs/underwriting-guidelines-v4.2.pdf"
+    }
+  ],
+  "removed_record_keys": []
+}

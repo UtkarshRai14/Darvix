@@ -1,0 +1,94 @@
+{
+  "collection": "finance_id",
+  "name": "Arunika Multifinance - pembiayaan motor (Indonesia)",
+  "kb_version": 1,
+  "generated_at": "2026-10-01T19:09:23+00:00",
+  "totals": {
+    "sources": 4,
+    "sources_failed": 0,
+    "sources_excluded": 0,
+    "records": 24,
+    "active": 24,
+    "duplicates_removed": 0,
+    "superseded_conflicts": 0,
+    "quarantined": 0,
+    "obsolete_removed": 0,
+    "records_with_pii_redacted": 0,
+    "pii_entities_redacted": {},
+    "records_changed_this_run": 0,
+    "records_removed_this_run": 0
+  },
+  "categories": {
+    "policy": 6,
+    "pricing": 4,
+    "faq": 7,
+    "objection": 7
+  },
+  "taxonomy": {
+    "product": "Plan features, benefits, riders and options",
+    "policy": "Coverage terms: waiting periods, exclusions, co-payment, grace/lapse, penalties, cancellation",
+    "qualification": "Eligibility, underwriting and entry rules",
+    "pricing": "Premiums, discounts, payment modes and payment channels",
+    "claims": "Cashless/reimbursement claims, grievances",
+    "faq": "Customer frequently asked questions",
+    "objection": "Objection-handling guidance for agents",
+    "form": "Application forms and required details",
+    "referral": "Referral and handoff processes",
+    "partnership_benefits": "Branch partner programme",
+    "company": "Company overview",
+    "testimonial": "Customer stories (marketing)"
+  },
+  "sources": [
+    {
+      "source_id": "id_angsuran_denda",
+      "path": "ketentuan-angsuran-dan-denda.md",
+      "type": "markdown",
+      "status": "ok",
+      "sections": 6,
+      "records": 6,
+      "boilerplate_removed": 0,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": []
+    },
+    {
+      "source_id": "id_cara_bayar",
+      "path": "cara-pembayaran.md",
+      "type": "markdown",
+      "status": "ok",
+      "sections": 4,
+      "records": 4,
+      "boilerplate_removed": 0,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": []
+    },
+    {
+      "source_id": "id_faq",
+      "path": "faq-pembiayaan.md",
+      "type": "markdown",
+      "status": "ok",
+      "sections": 7,
+      "records": 7,
+      "boilerplate_removed": 0,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": []
+    },
+    {
+      "source_id": "id_keberatan",
+      "path": "penanganan-keberatan.md",
+      "type": "markdown",
+      "status": "ok",
+      "sections": 7,
+      "records": 7,
+      "boilerplate_removed": 0,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": []
+    }
+  ],
+  "dedup_events": [],
+  "flagged_records": [],
+  "removed_record_keys": []
+}

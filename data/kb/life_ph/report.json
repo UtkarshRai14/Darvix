@@ -1,0 +1,95 @@
+{
+  "collection": "life_ph",
+  "name": "Liwanag Life Assurance via Sinag Bank (Philippines)",
+  "kb_version": 1,
+  "generated_at": "2026-10-01T19:09:36+00:00",
+  "totals": {
+    "sources": 4,
+    "sources_failed": 0,
+    "sources_excluded": 0,
+    "records": 24,
+    "active": 24,
+    "duplicates_removed": 0,
+    "superseded_conflicts": 0,
+    "quarantined": 0,
+    "obsolete_removed": 0,
+    "records_with_pii_redacted": 0,
+    "pii_entities_redacted": {},
+    "records_changed_this_run": 0,
+    "records_removed_this_run": 0
+  },
+  "categories": {
+    "product": 4,
+    "policy": 8,
+    "pricing": 2,
+    "objection": 7,
+    "referral": 3
+  },
+  "taxonomy": {
+    "product": "Plan features, benefits, riders and options",
+    "policy": "Coverage terms: waiting periods, exclusions, co-payment, grace/lapse, penalties, cancellation",
+    "qualification": "Eligibility, underwriting and entry rules",
+    "pricing": "Premiums, discounts, payment modes and payment channels",
+    "claims": "Cashless/reimbursement claims, grievances",
+    "faq": "Customer frequently asked questions",
+    "objection": "Objection-handling guidance for agents",
+    "form": "Application forms and required details",
+    "referral": "Referral and handoff processes",
+    "partnership_benefits": "Branch partner programme",
+    "company": "Company overview",
+    "testimonial": "Customer stories (marketing)"
+  },
+  "sources": [
+    {
+      "source_id": "ph_product_guide",
+      "path": "kalinga-protect-product-guide.md",
+      "type": "markdown",
+      "status": "ok",
+      "sections": 6,
+      "records": 6,
+      "boilerplate_removed": 0,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": []
+    },
+    {
+      "source_id": "ph_payment_lapse",
+      "path": "premium-payment-and-lapse.md",
+      "type": "markdown",
+      "status": "ok",
+      "sections": 8,
+      "records": 8,
+      "boilerplate_removed": 0,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": []
+    },
+    {
+      "source_id": "ph_objections",
+      "path": "objection-handling-ph.md",
+      "type": "markdown",
+      "status": "ok",
+      "sections": 7,
+      "records": 7,
+      "boilerplate_removed": 0,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": []
+    },
+    {
+      "source_id": "ph_bank_referral",
+      "path": "bank-referral-program.md",
+      "type": "markdown",
+      "status": "ok",
+      "sections": 3,
+      "records": 3,
+      "boilerplate_removed": 0,
+      "notes": [],
+      "issues": [],
+      "boilerplate_examples": []
+    }
+  ],
+  "dedup_events": [],
+  "flagged_records": [],
+  "removed_record_keys": []
+}
