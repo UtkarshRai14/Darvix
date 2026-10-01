@@ -1,0 +1,34 @@
+{
+  "life_premium_ph": {
+    "voices": {"standard": "fil-PH-AngeloNeural"},
+    "key_terms": ["premium", "policy", "beneficiary", "rider", "lapse", "coverage", "auto-debit", "due date", "advisor", "sinag bank", "grace period"],
+    "utterances": [
+      {"id": "ph01", "text": "Opo, ako po si Mark Dela Cruz.", "tags": ["cooperative", "filipino"]},
+      {"id": "ph02", "text": "Nag-fail kasi yung auto-debit ko, kulang yung balance nung due date.", "tags": ["taglish", "finance_terms"]},
+      {"id": "ph03", "text": "Covered pa ba ako kahit late na yung premium ko?", "tags": ["taglish", "finance_terms"]},
+      {"id": "ph04", "text": "Gusto ko sanang magdagdag ng rider para sa wife ko, para mas malaki yung coverage.", "tags": ["taglish", "finance_terms"]},
+      {"id": "ph05", "text": "Wala pa akong pera ngayon eh, nawalan kasi ako ng trabaho.", "tags": ["colloquial", "objection", "filipino"]},
+      {"id": "ph06", "text": "Ano bang mangyayari kapag na-lapse yung policy ko?", "tags": ["taglish", "finance_terms", "objection"]},
+      {"id": "ph07", "text": "Pwede ko bang makausap yung advisor? Gusto ko ng totoong tao.", "tags": ["escalation", "colloquial"]},
+      {"id": "ph08", "text": "Babayaran ko na lang sa Friday through Sinag Bank app.", "tags": ["taglish", "finance_terms"]},
+      {"id": "ph09", "text": "Hanggang kailan po ba yung grace period?", "tags": ["taglish", "finance_terms"]},
+      {"id": "ph10", "text": "I'll pay na lang next week, okay lang ba yun?", "tags": ["taglish", "english_heavy"]}
+    ]
+  },
+  "multifinance_id": {
+    "voices": {"standard": "id-ID-ArdiNeural", "javanese_accent_proxy": "jv-ID-DimasNeural", "sundanese_accent_proxy": "su-ID-JajangNeural"},
+    "key_terms": ["denda", "tenor", "angsuran", "cicilan", "dp", "jatuh tempo", "virtual account", "gajian", "keringanan", "petugas"],
+    "utterances": [
+      {"id": "id01", "text": "Iya, betul, saya Budi Santoso.", "tags": ["cooperative", "formal"]},
+      {"id": "id02", "text": "Empat digit terakhirnya tujuh tujuh tiga satu.", "tags": ["numbers"]},
+      {"id": "id03", "text": "Dendanya sudah berapa ya, Mbak? Kok mahal banget.", "tags": ["colloquial", "objection", "finance_terms"]},
+      {"id": "id04", "text": "Saya belum gajian, nanti hari Sabtu saya bayar lewat virtual account.", "tags": ["colloquial", "finance_terms", "loanwords"]},
+      {"id": "id05", "text": "Tenor saya tinggal berapa bulan lagi?", "tags": ["finance_terms", "loanwords"]},
+      {"id": "id06", "text": "Motor saya rusak, nggak bisa narik ojek, minta keringanan angsuran dong.", "tags": ["colloquial", "objection", "finance_terms"]},
+      {"id": "id07", "text": "Nggih, sampun tak bayar wingi lho.", "tags": ["javanese_words", "colloquial"]},
+      {"id": "id08", "text": "Kalau mau ambil motor baru, DP-nya minimal berapa persen?", "tags": ["finance_terms", "loanwords"]},
+      {"id": "id09", "text": "Saya mau bicara dengan petugas langsung saja.", "tags": ["escalation", "formal"]},
+      {"id": "id10", "text": "Jatuh temponya tanggal berapa ya? Cicilannya sudah telat tiga hari.", "tags": ["finance_terms", "colloquial"]}
+    ]
+  }
+}
