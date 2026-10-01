@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Callwise · Call Log</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+  <main class="page">
+    <div class="page-head">
+      <div>
+        <h1>Call log</h1>
+        <p>Every web and simulated test call with its stereo recording (agent left, customer right), transcript,
+          knowledge-base citations, outcome, automated checks and the mock-CRM records it created.</p>
+      </div>
+      <div class="tabs" style="margin:0;border:0">
+        <button class="tab active" data-view="calls">Calls</button>
+        <button class="tab" data-view="crm">CRM records</button>
+      </div>
+    </div>
+
+    <div id="view-calls" class="grid two-col">
+      <section class="card">
+        <div class="card-title">Calls <span class="count" id="call-count"></span></div>
+        <div id="call-list" class="scroll" style="max-height:calc(100vh - 210px)"></div>
+      </section>
+      <section id="call-detail" class="stack">
+        <div class="card"><div class="empty">Select a call to see its recording and transcript.</div></div>
+      </section>
+    </div>
+
+    <div id="view-crm" hidden>
+      <div class="card">
+        <div class="tabs" id="crm-tabs"></div>
+        <div id="crm-table"></div>
+      </div>
+    </div>
+  </main>
+  <script src="assets/common.js"></script>
+  <script src="assets/calls.js"></script>
+</body>
+</html>

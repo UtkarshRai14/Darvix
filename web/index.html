@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Callwise · Voice Agent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+  <main class="page">
+    <div class="page-head">
+      <div>
+        <h1>Knowledge-grounded voice agent</h1>
+        <p>Pick an agent and start a web call. Answers come from the knowledge base with citations; qualification,
+          verification and escalation rules run in code. Speak naturally - the agent listens when the orb glows.</p>
+      </div>
+    </div>
+    <div id="banner"></div>
+
+    <div class="grid call-grid">
+      <!-- left: call controls + agent -->
+      <section class="stack">
+        <div class="card">
+          <div class="orb-wrap">
+            <div class="orb" id="orb"><div class="core" id="orb-icon"></div></div>
+            <div class="call-status" id="call-status">Ready</div>
+            <div class="call-sub" id="call-sub">00:00</div>
+            <div class="small muted" id="selected-agent" style="margin-top:6px;text-align:center"></div>
+            <div class="call-actions">
+              <button class="btn primary" id="btn-call"></button>
+              <button class="btn danger" id="btn-end" hidden>End call</button>
+            </div>
+            <form class="type-box" id="type-form" style="width:100%">
+              <input class="input" id="type-input" placeholder="…or type what you'd say" autocomplete="off" disabled>
+              <button class="btn" id="type-send" disabled title="Send"></button>
+            </form>
+          </div>
+        </div>
+        <div class="card" id="test-account-card" hidden>
+          <div class="card-title">You play the customer</div>
+          <div id="test-account"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Agent</div>
+          <div id="agents"></div>
+        </div>
+      </section>
+
+      <!-- center: transcript -->
+      <section class="card">
+        <div class="card-title">Conversation <span class="count" id="turn-count"></span></div>
+        <div class="transcript scroll" id="transcript">
+          <div class="empty">The transcript, knowledge citations and per-turn latency appear here.</div>
+        </div>
+      </section>
+
+      <!-- right: state -->
+      <section class="stack">
+        <div class="card">
+          <div class="card-title">Outcome</div>
+          <div id="outcome"><div class="empty">No call yet</div></div>
+          <div id="actions" style="margin-top:10px"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Details captured</div>
+          <div class="fields" id="fields"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Knowledge retrieved <span class="count">last turn</span></div>
+          <div id="knowledge"><div class="empty">Retrieved records and citations appear after each answer.</div></div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="assets/common.js"></script>
+  <script src="assets/call.js"></script>
+</body>
+</html>

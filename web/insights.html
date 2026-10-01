@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Callwise · Live Insights</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+  <main class="page">
+    <div class="page-head">
+      <div>
+        <h1>Live insights &amp; nudges</h1>
+        <p>A dual-channel call is streamed at real-time speed in 250 ms chunks. Speech is end-pointed per channel,
+          transcribed, analysed by compliance rules (agent) and a small LLM (customer), and turned into nudges
+          while you listen - with confidence thresholds, de-duplication, cooldowns, expiry and priorities.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="source-bar">
+        <select class="input" id="source"></select>
+        <button class="btn primary" id="btn-start"></button>
+        <button class="btn danger" id="btn-stop" hidden></button>
+        <span class="mono muted" id="clock">00:00 / 00:00</span>
+      </div>
+      <div class="small muted" id="source-desc" style="margin-top:10px"></div>
+      <div class="row wrap" id="expected" style="margin-top:8px"></div>
+      <div class="progress"><div class="fill" id="progress"></div></div>
+      <audio id="player" preload="auto" hidden></audio>
+    </div>
+
+    <div class="grid live-grid" style="margin-top:16px">
+      <section class="card">
+        <div class="card-title">Live transcript <span class="count" id="seg-count"></span></div>
+        <div class="live-transcript scroll" id="transcript"><div class="empty">Agent (left channel) and customer (right channel) speech appears here as it is transcribed.</div></div>
+      </section>
+      <section class="card">
+        <div class="card-title">Nudges for the agent <span class="count" id="nudge-count"></span></div>
+        <div class="nudges scroll" id="nudges"><div class="empty">Actionable recommendations appear here within seconds of the evidence.</div></div>
+      </section>
+      <section class="stack">
+        <div class="card">
+          <div class="card-title">Compliance checklist</div>
+          <div id="checklist"><div class="empty">-</div></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Customer frustration <span class="count" id="topic"></span></div>
+          <svg class="spark" id="spark" viewBox="0 0 300 70" preserveAspectRatio="none"></svg>
+          <div id="insights" class="small muted" style="margin-top:6px"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Signals &amp; suppression <span class="count" id="sig-count"></span></div>
+          <div class="siglog scroll" id="signals"><div class="empty">Raw signals, including the ones the controller suppressed.</div></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="card" id="summary" style="margin-top:16px" hidden></div>
+  </main>
+  <script src="assets/common.js"></script>
+  <script src="assets/insights.js"></script>
+</body>
+</html>

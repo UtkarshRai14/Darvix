@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Callwise · Knowledge Base</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+  <main class="page">
+    <div class="page-head">
+      <div>
+        <h1>Knowledge base</h1>
+        <p>Web pages, PDFs, tables, forms and playbooks cleaned into versioned, traceable records. The voice agents
+          query this exact index (dense + BM25 hybrid with a relevance gate) and cite record IDs in every grounded answer.</p>
+      </div>
+      <div class="tabs" id="collections" style="margin:0;border:0"></div>
+    </div>
+
+    <div class="card">
+      <div class="tiles" id="tiles"></div>
+    </div>
+
+    <div class="grid two-col" style="margin-top:16px">
+      <section class="card">
+        <div class="card-title">Retrieval playground</div>
+        <form id="search-form">
+          <div class="search"><span id="search-icon"></span><input class="input" id="q" placeholder="Ask something a customer would ask…" autocomplete="off"></div>
+        </form>
+        <div class="row wrap" id="examples" style="margin-top:10px"></div>
+        <hr class="sep">
+        <div class="card-title">Category filter</div>
+        <div class="row wrap" id="cats"></div>
+        <hr class="sep">
+        <div class="small muted" id="search-meta"></div>
+      </section>
+      <section class="card">
+        <div class="card-title">Results <span class="count" id="result-count"></span></div>
+        <div id="results"><div class="empty">Search to see ranked records, scores, relevance-gate decisions and citations.</div></div>
+      </section>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <div class="tabs" id="report-tabs">
+        <button class="tab active" data-tab="sources">Sources &amp; extraction</button>
+        <button class="tab" data-tab="quality">Dedup, conflicts &amp; flags</button>
+        <button class="tab" data-tab="records">Records</button>
+        <button class="tab" data-tab="eval">Retrieval evaluation</button>
+      </div>
+      <div id="report-body"></div>
+    </div>
+  </main>
+  <script src="assets/common.js"></script>
+  <script src="assets/knowledge.js"></script>
+</body>
+</html>
