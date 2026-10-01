@@ -1,0 +1,22 @@
+{
+  "id": "noisy_ambiguous",
+  "title": "Noisy, ambiguous call (no nudges expected)",
+  "description": "Sales call from a noisy street: traffic hum, horn bursts and background chatter on the customer line, with short non-committal replies. A compliant agent. Good behaviour is to stay quiet.",
+  "call_type": "sales",
+  "voices": {"agent": "en-IN-NeerjaNeural", "customer": "en-IN-PrabhatNeural", "babble": "en-US-GuyNeural"},
+  "noise": {"snr_db": 6, "horns": 4},
+  "turns": [
+    {"speaker": "agent", "text": "Hello, this is Priya from Nivaran Health Insurance. This call is recorded for quality purposes. Is this a good time to talk?"},
+    {"speaker": "customer", "text": "Hello? Hello? Sorry, I'm on the road, it's a bit noisy."},
+    {"speaker": "agent", "text": "No problem. I was calling about the health insurance enquiry you made."},
+    {"speaker": "customer", "text": "Yeah... hmm... I'm not sure. Maybe."},
+    {"speaker": "agent", "text": "Would you like me to explain the plans briefly?"},
+    {"speaker": "customer", "text": "Okay, okay. Go on."},
+    {"speaker": "agent", "text": "We have plans for individuals and families, with cashless treatment at network hospitals."},
+    {"speaker": "customer", "text": "Hmm. Right."},
+    {"speaker": "agent", "text": "Pre-existing diseases are covered after a waiting period of thirty six months."},
+    {"speaker": "customer", "text": "Okay. I'll think about it."},
+    {"speaker": "agent", "text": "Sure, thank you for your time."}
+  ],
+  "expected": []
+}

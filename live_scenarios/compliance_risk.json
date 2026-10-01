@@ -1,0 +1,29 @@
+{
+  "id": "compliance_risk",
+  "title": "Skipped disclosure and risky statements",
+  "description": "Sales call. The agent never states the recording disclosure, claims there is no waiting period for diabetes, promises claim approval, and quotes a price and pushes the payment link without disclosing waiting periods.",
+  "call_type": "sales",
+  "voices": {"agent": "en-IN-PrabhatNeural", "customer": "en-IN-NeerjaNeural"},
+  "noise": null,
+  "turns": [
+    {"speaker": "agent", "text": "Hello, this is Rahul from Nivaran Health. Am I speaking with Mrs. Kavita Sharma?"},
+    {"speaker": "customer", "text": "Yes, speaking."},
+    {"speaker": "agent", "text": "You had asked about a family health plan. Who would you like to cover?"},
+    {"speaker": "customer", "text": "Me, my husband and our daughter. My husband has diabetes."},
+    {"speaker": "agent", "text": "No problem at all. With our Family Floater everything is covered from day one, there is no waiting period for diabetes."},
+    {"speaker": "customer", "text": "Really? I thought there was always a waiting period for diabetes."},
+    {"speaker": "agent", "text": "Don't worry madam, your claim will definitely be approved, it is a hundred percent guaranteed."},
+    {"speaker": "customer", "text": "Okay. What would it cost for ten lakh cover?"},
+    {"speaker": "agent", "text": "For ten lakh, the premium is around seventeen thousand eight hundred rupees a year. Shall I send you the payment link now?"},
+    {"speaker": "customer", "text": "Let me think about it. Is the payment link safe?"},
+    {"speaker": "agent", "text": "Yes, it is our official link. You can pay by card or UPI."}
+  ],
+  "expected": [
+    {"type": "compliance_disclosure_missing", "turn": 2},
+    {"type": "risky_statement", "turn": 4},
+    {"type": "risky_statement", "turn": 6},
+    {"type": "compliance_waiting_period", "turn": 8},
+    {"type": "buying_signal", "turn": 7, "optional": true},
+    {"type": "callback_request", "turn": 9, "optional": true}
+  ]
+}

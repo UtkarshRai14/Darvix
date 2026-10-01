@@ -1,0 +1,30 @@
+{
+  "id": "missed_cross_sell",
+  "title": "Missed cross-sell: parents mentioned twice",
+  "description": "Sales call. The customer twice mentions elderly parents with medical needs; the agent sells only an individual plan. Disclosures are done correctly, so no compliance nudge is expected.",
+  "call_type": "sales",
+  "voices": {"agent": "en-IN-NeerjaNeural", "customer": "en-IN-PrabhatNeural"},
+  "noise": null,
+  "turns": [
+    {"speaker": "agent", "text": "Good afternoon, this is Priya from Nivaran Health Insurance. This call is being recorded for quality purposes. Am I speaking with Mr. Arjun?"},
+    {"speaker": "customer", "text": "Yes, this is Arjun. I filled a form on your website yesterday."},
+    {"speaker": "agent", "text": "Thank you, Arjun. Who would you like to cover under the health plan?"},
+    {"speaker": "customer", "text": "Just me for now. I'm thirty two and I work in Bengaluru."},
+    {"speaker": "agent", "text": "Great. Do you have any existing health conditions?"},
+    {"speaker": "customer", "text": "No, nothing. But my parents are both above sixty and my father had a knee surgery last year, so I keep worrying about their medical bills too."},
+    {"speaker": "agent", "text": "I understand. For you, our Essential plan with five lakh cover would be a good fit."},
+    {"speaker": "customer", "text": "Okay. And what about the waiting period?"},
+    {"speaker": "agent", "text": "Pre-existing diseases are covered after thirty six months, and there is a thirty day initial waiting period, except for accidents."},
+    {"speaker": "customer", "text": "Hmm, okay. Honestly my mother's hospital visits are getting more frequent, that's the bigger worry for me."},
+    {"speaker": "agent", "text": "Sure. So for yourself, the indicative premium is about five thousand six hundred rupees a year."},
+    {"speaker": "customer", "text": "That sounds reasonable. How do I go ahead with it?"},
+    {"speaker": "agent", "text": "I'll email you the proposal form link and you can complete it today."},
+    {"speaker": "customer", "text": "Okay, please send it."}
+  ],
+  "expected": [
+    {"type": "cross_sell", "turn": 5},
+    {"type": "missed_opportunity", "turn": 8},
+    {"type": "buying_signal", "turn": 11},
+    {"type": "buying_signal", "turn": 13, "optional": true}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "rising_frustration",
+  "title": "Rising frustration, payment difficulty and callback",
+  "description": "Service call about a delayed claim. The customer becomes increasingly frustrated, then reveals a job loss and asks for a callback; the agent sticks to process.",
+  "call_type": "service",
+  "voices": {"agent": "en-IN-NeerjaNeural", "customer": "en-IN-PrabhatNeural"},
+  "noise": null,
+  "turns": [
+    {"speaker": "agent", "text": "Good morning, this is Neha from Nivaran Health Insurance. This call is recorded for quality and training. How can I help you today?"},
+    {"speaker": "customer", "text": "Hi, I'm calling about my reimbursement claim. I submitted all the documents three weeks ago."},
+    {"speaker": "agent", "text": "Sure, may I have your policy number please?"},
+    {"speaker": "customer", "text": "I already gave it to the last person. Fine, it's N H four five six seven eight."},
+    {"speaker": "agent", "text": "Thank you. Could you also confirm your date of birth?"},
+    {"speaker": "customer", "text": "This is the third time I'm calling about this. Every single time I have to repeat everything."},
+    {"speaker": "agent", "text": "Let me check. Your claim is under review, and we need the original pharmacy bills."},
+    {"speaker": "customer", "text": "What? Nobody told me that! This is ridiculous, I have wasted so much time on this."},
+    {"speaker": "agent", "text": "As per the process, the documents must be submitted in original."},
+    {"speaker": "customer", "text": "And honestly, money is really tight right now. I lost my job last month and I can't even pay my renewal premium next week."},
+    {"speaker": "agent", "text": "Your renewal premium is fourteen thousand two hundred rupees, due on the fifteenth."},
+    {"speaker": "customer", "text": "I can't talk now, I'm getting late. Can someone call me back in the evening?"},
+    {"speaker": "agent", "text": "Okay, I will note that."}
+  ],
+  "expected": [
+    {"type": "frustration", "turn": 7},
+    {"type": "frustration", "turn": 5, "optional": true},
+    {"type": "payment_difficulty", "turn": 9},
+    {"type": "callback_request", "turn": 11}
+  ]
+}
