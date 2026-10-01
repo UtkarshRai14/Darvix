@@ -1,0 +1,18 @@
+# secrets & environments
+.env
+.venv/
+__pycache__/
+*.pyc
+.cache/
+
+# runtime data (regenerated). recordings/ is kept: test-call recordings + transcripts are deliverables.
+# Never commit recordings of real customers.
+data/crm/
+reports/live_sessions/
+live_scenarios/audio/
+data/asr_eval/audio/
+data/asr_eval/human/
+
+# derived index files (rebuilt by: python -m app.kb.ingest)
+data/kb/*/embeddings.npy
+data/kb/*/index_ids.json
