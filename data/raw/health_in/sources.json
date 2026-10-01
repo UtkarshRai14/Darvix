@@ -1,0 +1,36 @@
+{
+  "collection": "health_in",
+  "name": "Nivaran Health Insurance (India)",
+  "language": "en",
+  "query_expansions": {
+    "mediclaim": "health insurance",
+    "\\bpeds?\\b": "pre-existing disease",
+    "\\bcopay\\b": "co-payment",
+    "company insurance|office insurance|corporate insurance|from my company|from my office": "employer health cover"
+  },
+  "products": {
+    "essential": "\\bessential\\b",
+    "family_floater": "family floater",
+    "senior_care": "senior care",
+    "critical_illness_rider": "critical illness rider"
+  },
+  "sources": [
+    {"source_id": "web_home", "short": "home", "path": "website/index.html", "type": "html", "url": "https://www.nivaranhealth.example/", "effective_date": "2026-06-01", "category": "company", "authority": 2, "audience": "customer"},
+    {"source_id": "web_essential", "short": "ess", "path": "website/essential.html", "type": "html", "url": "https://www.nivaranhealth.example/products/essential", "effective_date": "2026-06-01", "category": "product", "section_categories": true, "products": ["essential"], "authority": 2, "audience": "customer"},
+    {"source_id": "web_family_floater", "short": "ff", "path": "website/family-floater.html", "type": "html", "url": "https://www.nivaranhealth.example/products/family-floater", "effective_date": "2026-06-01", "category": "product", "section_categories": true, "products": ["family_floater"], "authority": 2, "audience": "customer"},
+    {"source_id": "web_senior_care", "short": "sc", "path": "website/senior-care.html", "type": "html", "url": "https://www.nivaranhealth.example/products/senior-care", "effective_date": "2026-06-01", "category": "product", "section_categories": true, "products": ["senior_care"], "authority": 2, "audience": "customer"},
+    {"source_id": "web_faq", "short": "faq", "path": "website/faq.html", "type": "html", "url": "https://www.nivaranhealth.example/faq", "effective_date": "2026-06-12", "category": "faq", "authority": 2, "audience": "customer"},
+    {"source_id": "web_faq_archive_2024", "short": "faqold", "path": "website/faq-archive-2024.html", "type": "html", "url": "https://www.nivaranhealth.example/faq-2024", "effective_date": "2024-03-15", "category": "faq", "authority": 1, "audience": "customer"},
+    {"source_id": "web_claims", "short": "clm", "path": "website/claims.html", "type": "html", "url": "https://www.nivaranhealth.example/claims", "effective_date": "2026-06-01", "category": "claims", "authority": 2, "audience": "customer"},
+    {"source_id": "web_partners", "short": "prt", "path": "website/partners.html", "type": "html", "url": "https://www.nivaranhealth.example/partners", "effective_date": "2026-06-01", "category": "partnership_benefits", "authority": 2, "audience": "customer"},
+    {"source_id": "web_testimonials", "short": "tst", "path": "website/testimonials.html", "type": "html", "url": "https://www.nivaranhealth.example/stories", "effective_date": "2026-06-01", "category": "testimonial", "authority": 1, "audience": "customer"},
+    {"source_id": "form_proposal", "short": "form", "path": "forms/proposal-form.html", "type": "form", "url": "https://www.nivaranhealth.example/apply", "effective_date": "2026-06-01", "category": "form", "authority": 2, "audience": "customer"},
+    {"source_id": "tbl_premium_chart", "short": "prem", "path": "tables/indicative-premium-chart.csv", "type": "csv", "url": null, "effective_date": "2026-04-01", "category": "pricing", "authority": 3, "audience": "customer"},
+    {"source_id": "pdf_brochure_2026", "short": "bro", "path": "pdfs/product-brochure-2026.pdf", "type": "pdf", "url": "https://www.nivaranhealth.example/brochure-2026.pdf", "effective_date": "2026-04-01", "category": "product", "section_categories": true, "authority": 3, "audience": "customer"},
+    {"source_id": "pdf_underwriting_v4_2", "short": "uw", "path": "pdfs/underwriting-guidelines-v4.2.pdf", "type": "pdf", "url": null, "effective_date": "2026-04-01", "category": "qualification", "authority": 4, "audience": "internal"},
+    {"source_id": "pdf_claim_form_scan", "short": "cform", "path": "pdfs/scanned-claim-form.pdf", "type": "pdf", "url": null, "effective_date": "2026-01-01", "category": "claims", "authority": 2, "audience": "customer"},
+    {"source_id": "pdf_rate_card_2025", "short": "rate", "path": "pdfs/rate-card-2025-corrupt.pdf", "type": "pdf", "url": null, "effective_date": "2025-04-01", "category": "pricing", "authority": 2, "audience": "internal"},
+    {"source_id": "playbook_objections", "short": "obj", "path": "playbooks/objection-handling.md", "type": "markdown", "url": null, "effective_date": "2026-05-01", "category": "objection", "authority": 3, "audience": "internal"},
+    {"source_id": "crm_call_notes", "short": "crm", "path": "internal/crm-call-notes-export.txt", "type": "text", "url": null, "effective_date": "2026-07-14", "category": "internal_notes", "exclude_reason": "CRM call-note export: customer records, not business knowledge", "authority": 0, "audience": "internal"}
+  ]
+}

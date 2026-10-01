@@ -1,0 +1,23 @@
+{
+  "collection": "life_ph",
+  "name": "Liwanag Life Assurance via Sinag Bank (Philippines)",
+  "language": "en",
+  "query_expansions": {
+    "\\bpera\\b|pambayad|\\bhulog\\b|magbayad|\\bbayad\\b": "money payment premium",
+    "wala pa akong pera|walang pera|\\bkapos\\b|gipit": "no money financial difficulty",
+    "magpalit|palitan|ipapalit|baguhin": "change",
+    "\\bkailan\\b|hanggang kailan": "when until",
+    "i-cancel|ipa-cancel|kanselahin|itigil": "cancel",
+    "na-lapse|ma-lapse|mapaso": "lapse",
+    "auto-debit|autodebit|naka-auto": "auto-debit"
+  },
+  "products": {
+    "kalinga_protect": "kalinga"
+  },
+  "sources": [
+    {"source_id": "ph_product_guide", "short": "prod", "path": "kalinga-protect-product-guide.md", "type": "markdown", "url": null, "effective_date": "2026-03-01", "category": "product", "section_categories": true, "products": ["kalinga_protect"], "authority": 3, "audience": "internal"},
+    {"source_id": "ph_payment_lapse", "short": "pay", "path": "premium-payment-and-lapse.md", "type": "markdown", "url": null, "effective_date": "2026-03-01", "category": "policy", "section_categories": true, "products": ["kalinga_protect"], "authority": 3, "audience": "internal"},
+    {"source_id": "ph_objections", "short": "obj", "path": "objection-handling-ph.md", "type": "markdown", "url": null, "effective_date": "2026-05-01", "category": "objection", "authority": 3, "audience": "internal"},
+    {"source_id": "ph_bank_referral", "short": "ref", "path": "bank-referral-program.md", "type": "markdown", "url": null, "effective_date": "2026-05-01", "category": "referral", "authority": 3, "audience": "internal"}
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "collection": "finance_id",
+  "name": "Arunika Multifinance - pembiayaan motor (Indonesia)",
+  "language": "id",
+  "query_expansions": {
+    "cicilan|nyicil|nyicilnya": "angsuran",
+    "\\btelat\\b|nunggak|molor": "terlambat denda",
+    "lewat mana|bayar di ?mana|bayarnya di ?mana": "kanal pembayaran",
+    "\\bphk\\b|dipecat|nganggur|di-phk": "kehilangan pekerjaan restrukturisasi",
+    "\\b(nggak|gak|ga|enggak|ndak|mboten)\\b": "tidak",
+    "\\bduit\\b": "uang",
+    "gajian": "gaji",
+    "over kredit|oper kredit|alih kredit": "pengalihan kontrak",
+    "\\bkredit\\b": "pembiayaan"
+  },
+  "products": {
+    "pembiayaan_motor": "motor"
+  },
+  "sources": [
+    {"source_id": "id_angsuran_denda", "short": "ang", "path": "ketentuan-angsuran-dan-denda.md", "type": "markdown", "url": null, "effective_date": "2026-02-01", "category": "policy", "section_categories": true, "products": ["pembiayaan_motor"], "authority": 3, "audience": "internal"},
+    {"source_id": "id_cara_bayar", "short": "bayar", "path": "cara-pembayaran.md", "type": "markdown", "url": null, "effective_date": "2026-02-01", "category": "pricing", "products": ["pembiayaan_motor"], "authority": 3, "audience": "customer"},
+    {"source_id": "id_faq", "short": "faq", "path": "faq-pembiayaan.md", "type": "markdown", "url": null, "effective_date": "2026-02-01", "category": "faq", "products": ["pembiayaan_motor"], "authority": 2, "audience": "customer"},
+    {"source_id": "id_keberatan", "short": "obj", "path": "penanganan-keberatan.md", "type": "markdown", "url": null, "effective_date": "2026-05-01", "category": "objection", "products": ["pembiayaan_motor"], "authority": 3, "audience": "internal"}
+  ]
+}
