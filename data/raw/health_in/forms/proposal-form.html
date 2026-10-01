@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Health insurance proposal form | Nivaran Health</title>
+</head>
+<body>
+  <header class="site-header"><div class="logo">Nivaran Health</div></header>
+  <main>
+    <h1>Proposal form</h1>
+    <p>Fields marked * are mandatory. All information must be accurate; incorrect or incomplete disclosure may affect claims.</p>
+    <form id="proposal" action="/submit" method="post">
+      <label for="nm">Proposer Full Name *</label> <input id="nm" name="nm" required>
+      <label for="dob">D.O.B (dd/mm/yyyy) *</label> <input id="dob" name="dob" required>
+      <label for="mob">Mobile No. *</label> <input id="mob" name="mob" required>
+      <label for="eml">E-mail ID</label> <input id="eml" name="eml">
+      <label for="pin">Pin Code *</label> <input id="pin" name="pin" required>
+      <label for="plan">Plan Name *</label>
+      <select id="plan" name="plan" required><option>Essential</option><option>Family Floater</option><option>Senior Care</option></select>
+      <label for="sa">Sum Assured (Rs.) *</label> <input id="sa" name="sa" required>
+      <label for="mem">No. of members to be insured *</label> <input id="mem" name="mem" required>
+      <label for="ped">Any PED? (Y/N) *</label> <select id="ped" name="ped" required><option>Y</option><option>N</option></select>
+      <label for="peddet">If yes, details of pre existing illness</label> <textarea id="peddet" name="peddet"></textarea>
+      <label for="occ">Occupation</label> <input id="occ" name="occ">
+      <label for="nominee">Nominee Name &amp; Relationship *</label> <input id="nominee" name="nominee" required>
+      <label for="pan">PAN (mandatory if annual premium above Rs. 50,000)</label> <input id="pan" name="pan">
+      <label><input type="checkbox" name="consent" required> I agree to be contacted by Nivaran and its advisors about this proposal *</label>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <footer class="site-footer"><p>&copy; 2026 Nivaran Health Insurance Ltd.</p></footer>
+</body>
+</html>
