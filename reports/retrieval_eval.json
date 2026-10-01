@@ -1,0 +1,1327 @@
+[
+  {
+    "id": "Q01",
+    "collection": "health_in",
+    "type": "product",
+    "question": "What sum insured options does the family floater have?",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: family, floater, insured, options, sum.",
+    "latency_ms": 1695.1,
+    "top_hit": {
+      "record_id": "kb_product_ff_003",
+      "title": "Nivaran Family Floater > Sum insured options",
+      "content": "Choose a floater sum insured of ₹5 lakh, ₹10 lakh, ₹25 lakh or ₹50 lakh. The sum insured is shared by all insured family members for the policy year.",
+      "citation": "data/raw/health_in/website/family-floater.html > Sum insured options (v1.0)",
+      "scores": {
+        "dense": 0.752,
+        "bm25": 8.3,
+        "rrf": 0.0328
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_product_ff_003",
+        "title": "Nivaran Family Floater > Sum insured options",
+        "scores": {
+          "dense": 0.752,
+          "bm25": 8.3,
+          "rrf": 0.0328
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_company_home_003",
+        "title": "Health insurance that stays with you > Our health plans > Nivaran Family Floater",
+        "scores": {
+          "dense": 0.721,
+          "bm25": 7.78,
+          "rrf": 0.0323
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_product_ff_001",
+        "title": "Nivaran Family Floater",
+        "scores": {
+          "dense": 0.616,
+          "bm25": 5.49,
+          "rrf": 0.0308
+        },
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "id": "Q02",
+    "collection": "health_in",
+    "type": "product",
+    "question": "Can I cover my parents in the family floater plan?",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: family, floater, parents, plan.",
+    "latency_ms": 7.6,
+    "top_hit": {
+      "record_id": "kb_qualification_ff_002",
+      "title": "Nivaran Family Floater > Who can be covered",
+      "content": "Up to 2 adults (self and spouse) aged 18 to 60 years at entry.\nUp to 4 dependent children aged 91 days to 25 years.\nParents are not covered under this plan. Parents aged 60 to 75 can be insured under Nivaran Senior Care.\nLifelong renewal is available once the policy is issued.",
+      "citation": "data/raw/health_in/website/family-floater.html > Who can be covered (v1.0)",
+      "scores": {
+        "dense": 0.538,
+        "bm25": 8.63,
+        "rrf": 0.0325
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_qualification_ff_002",
+        "title": "Nivaran Family Floater > Who can be covered",
+        "scores": {
+          "dense": 0.538,
+          "bm25": 8.63,
+          "rrf": 0.0325
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_product_ff_001",
+        "title": "Nivaran Family Floater",
+        "scores": {
+          "dense": 0.552,
+          "bm25": 3.91,
+          "rrf": 0.0309
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_company_home_004",
+        "title": "Health insurance that stays with you > Our health plans > Nivaran Senior Care",
+        "scores": {
+          "dense": 0.426,
+          "bm25": 6.6,
+          "rrf": 0.0304
+        },
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "id": "Q03",
+    "collection": "health_in",
+    "type": "policy",
+    "question": "How long is the waiting period for pre-existing diseases?",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: diseases, existing, period, pre, waiting.",
+    "latency_ms": 8.5,
+    "top_hit": {
+      "record_id": "kb_faq_faq_002",
+      "title": "Frequently asked questions > Are pre-existing diseases covered?",
+      "content": "Yes. Declared pre-existing diseases are covered after a waiting period of 36 months of continuous coverage. You must declare all pre-existing diseases honestly in the proposal form; non-disclosure can lead to claim rejection or policy cancellation.",
+      "citation": "data/raw/health_in/website/faq.html > Are pre-existing diseases covered? (v1.0)",
+      "scores": {
+        "dense": 0.718,
+        "bm25": 10.02,
+        "rrf": 0.0325
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_faq_faq_002",
+        "title": "Frequently asked questions > Are pre-existing diseases covered?",
+        "scores": {
+          "dense": 0.718,
+          "bm25": 10.02,
+          "rrf": 0.0325
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_policy_ess_005",
+        "title": "Nivaran Essential > Waiting periods",
+        "scores": {
+          "dense": 0.675,
+          "bm25": 7.94,
+          "rrf": 0.0315
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_objection_obj_007",
+        "title": "Sales Playbook: Objection Handling (Health Insurance) > Objection: \"The waiting period is too long\"",
+        "scores": {
+          "dense": 0.647,
+          "bm25": 11.96,
+          "rrf": 0.0313
+        },
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "id": "Q04",
+    "collection": "health_in",
+    "type": "policy",
+    "question": "Is there any co-payment for senior citizens?",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: co, payment, senior.",
+    "latency_ms": 7.7,
+    "top_hit": {
+      "record_id": "kb_policy_sc_004",
+      "title": "Nivaran Senior Care > Co-payment",
+      "content": "A co-payment of 20% applies to every claim under Senior Care. This means the insured pays 20% of each admissible claim amount and the company pays the remaining 80%.",
+      "citation": "data/raw/health_in/website/senior-care.html > Co-payment (v1.0)",
+      "scores": {
+        "dense": 0.618,
+        "bm25": 8.65,
+        "rrf": 0.0325
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_policy_sc_004",
+        "title": "Nivaran Senior Care > Co-payment",
+        "scores": {
+          "dense": 0.618,
+          "bm25": 8.65,
+          "rrf": 0.0325
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_faq_faq_010",
+        "title": "Frequently asked questions > Is there any co-payment?",
+        "scores": {
+          "dense": 0.577,
+          "bm25": 9.11,
+          "rrf": 0.0323
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_product_sc_001",
+        "title": "Nivaran Senior Care",
+        "scores": {
+          "dense": 0.49,
+          "bm25": 6.45,
+          "rrf": 0.031
+        },
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "id": "Q05",
+    "collection": "health_in",
+    "type": "qualification",
+    "question": "What is the maximum entry age for the senior care plan?",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: age, care, entry, plan, senior.",
+    "latency_ms": 7.2,
+    "top_hit": {
+      "record_id": "kb_company_home_004",
+      "title": "Health insurance that stays with you > Our health plans > Nivaran Senior Care",
+      "content": "A dedicated plan for parents and senior citizens with entry age 60 to 75 years.",
+      "citation": "data/raw/health_in/website/index.html > Nivaran Senior Care (v1.0)",
+      "scores": {
+        "dense": 0.734,
+        "bm25": 12.04,
+        "rrf": 0.0325
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_company_home_004",
+        "title": "Health insurance that stays with you > Our health plans > Nivaran Senior Care",
+        "scores": {
+          "dense": 0.734,
+          "bm25": 12.04,
+          "rrf": 0.0325
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_qualification_sc_002",
+        "title": "Nivaran Senior Care > Eligibility",
+        "scores": {
+          "dense": 0.765,
+          "bm25": 7.76,
+          "rrf": 0.032
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_product_bro_002",
+        "title": "Nivaran Health Plans - Product Brochure > Plan comparison",
+        "scores": {
+          "dense": 0.71,
+          "bm25": 9.29,
+          "rrf": 0.0318
+        },
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "id": "Q06",
+    "collection": "health_in",
+    "type": "qualification",
+    "question": "Do I need a medical test if I am 50 years old?",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: medical, test, years.",
+    "latency_ms": 7.3,
+    "top_hit": {
+      "record_id": "kb_faq_faq_008",
+      "title": "Frequently asked questions > Do I need a medical test to buy a policy?",
+      "content": "No pre-policy medical tests are needed for applicants up to age 45 who do not declare any pre-existing disease. Applicants above 45 years, or applicants who declare a pre-existing disease, may need a tele-medical interview or a pre-policy health check-up. The check-up is arranged at the company's cost. Senior Care always requires a pre-policy check-up.",
+      "citation": "data/raw/health_in/website/faq.html > Do I need a medical test to buy a policy? (v1.0)",
+      "scores": {
+        "dense": 0.609,
+        "bm25": 8.22,
+        "rrf": 0.0328
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_faq_faq_008",
+        "title": "Frequently asked questions > Do I need a medical test to buy a policy?",
+        "scores": {
+          "dense": 0.609,
+          "bm25": 8.22,
+          "rrf": 0.0328
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_qualification_uw_004",
+        "title": "Retail Health Underwriting Guidelines > Medical examination requirements",
+        "scores": {
+          "dense": 0.57,
+          "bm25": 4.68,
+          "rrf": 0.032
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_objection_obj_004",
+        "title": "Sales Playbook: Objection Handling (Health Insurance) > Objection: \"I am young and healthy, I don't need it now\"",
+        "scores": {
+          "dense": 0.408,
+          "bm25": 6.03,
+          "rrf": 0.0315
+        },
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "id": "Q07",
+    "collection": "health_in",
+    "type": "faq",
+    "question": "What is the free look period?",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: free, look, period.",
+    "latency_ms": 6.7,
+    "top_hit": {
+      "record_id": "kb_faq_faq_003",
+      "title": "Frequently asked questions > What is the free-look period?",
+      "content": "You get a free-look period of 30 days from the date you receive the policy document. If you are not satisfied, you can cancel the policy during this period and receive a refund of the premium after deduction of proportionate risk premium and medical check-up costs, if any.",
+      "citation": "data/raw/health_in/website/faq.html > What is the free-look period? (v1.0)",
+      "scores": {
+        "dense": 0.668,
+        "bm25": 10.46,
+        "rrf": 0.0328
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_faq_faq_003",
+        "title": "Frequently asked questions > What is the free-look period?",
+        "scores": {
+          "dense": 0.668,
+          "bm25": 10.46,
+          "rrf": 0.0328
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_objection_obj_007",
+        "title": "Sales Playbook: Objection Handling (Health Insurance) > Objection: \"The waiting period is too long\"",
+        "scores": {
+          "dense": 0.25,
+          "bm25": 1.99,
+          "rrf": 0.0288
+        },
+        "relevant": false
+      },
+      {
+        "record_id": "kb_policy_bro_008",
+        "title": "Nivaran Health Plans - Product Brochure > Cancellation by the policyholder",
+        "scores": {
+          "dense": 0.212,
+          "bm25": 8.42,
+          "rrf": 0.0286
+        },
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "Q08",
+    "collection": "health_in",
+    "type": "faq",
+    "question": "Can I get a tax benefit on my health insurance premium?",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: get, health, insurance, premium, tax.",
+    "latency_ms": 6.9,
+    "top_hit": {
+      "record_id": "kb_faq_faq_006",
+      "title": "Frequently asked questions > Can I get tax benefits on the premium?",
+      "content": "Premiums paid for health insurance are eligible for deduction under Section 80D of the Income Tax Act, as per prevailing tax laws: up to ₹25,000 a year for self, spouse and children (₹50,000 if the eldest insured is a senior citizen), and an additional deduction for premiums paid for parents. Please consult your tax advisor for your specific situation.",
+      "citation": "data/raw/health_in/website/faq.html > Can I get tax benefits on the premium? (v1.0)",
+      "scores": {
+        "dense": 0.83,
+        "bm25": 11.02,
+        "rrf": 0.0328
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_faq_faq_006",
+        "title": "Frequently asked questions > Can I get tax benefits on the premium?",
+        "scores": {
+          "dense": 0.83,
+          "bm25": 11.02,
+          "rrf": 0.0328
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_objection_obj_003",
+        "title": "Sales Playbook: Objection Handling (Health Insurance) > Objection: \"Health insurance is too expensive\"",
+        "scores": {
+          "dense": 0.625,
+          "bm25": 5.89,
+          "rrf": 0.0323
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_pricing_prem_001",
+        "title": "Indicative annual premium - Essential, 1 adult",
+        "scores": {
+          "dense": 0.53,
+          "bm25": 2.03,
+          "rrf": 0.0301
+        },
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "Q09",
+    "collection": "health_in",
+    "type": "objection",
+    "question": "I already have insurance from my company, why do I need this?",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: already, insurance.",
+    "latency_ms": 9.6,
+    "top_hit": {
+      "record_id": "kb_objection_obj_002",
+      "title": "Sales Playbook: Objection Handling (Health Insurance) > Objection: \"I already have health cover from my employer\"",
+      "content": "Employer group cover usually ends when the employee leaves or changes the job, and the sum insured is often shared with the family and may be too low for a major hospitalisation. A personal policy stays with the customer for life and its waiting periods keep running from the first policy date, so pre-existing diseases get covered earlier than if the customer buys later. Suggest a personal policy as a base cover in addition to employer cover.",
+      "citation": "data/raw/health_in/playbooks/objection-handling.md > Objection: \"I already have health cover from my employer\" (v1.0)",
+      "scores": {
+        "dense": 0.583,
+        "bm25": 13.98,
+        "rrf": 0.0328
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_objection_obj_002",
+        "title": "Sales Playbook: Objection Handling (Health Insurance) > Objection: \"I already have health cover from my employer\"",
+        "scores": {
+          "dense": 0.583,
+          "bm25": 13.98,
+          "rrf": 0.0328
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_company_home_005",
+        "title": "Health insurance that stays with you > Why choose Nivaran?",
+        "scores": {
+          "dense": 0.418,
+          "bm25": 5.26,
+          "rrf": 0.0306
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_company_home_001",
+        "title": "Health insurance that stays with you",
+        "scores": {
+          "dense": 0.503,
+          "bm25": 1.89,
+          "rrf": 0.0296
+        },
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "Q10",
+    "collection": "health_in",
+    "type": "objection",
+    "question": "This is too expensive for me.",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: expensive, too.",
+    "latency_ms": 7.9,
+    "top_hit": {
+      "record_id": "kb_objection_obj_003",
+      "title": "Sales Playbook: Objection Handling (Health Insurance) > Objection: \"Health insurance is too expensive\"",
+      "content": "Indicative premiums start at about ₹4,200 per year for an adult aged 18 to 35 with ₹3 lakh sum insured, which is about ₹350 a month. Premiums can be paid monthly through auto-debit or UPI AutoPay. Premiums are eligible for tax deduction under Section 80D as per prevailing tax laws. The customer can start with a lower sum insured and increase it at renewal, subject to underwriting.",
+      "citation": "data/raw/health_in/playbooks/objection-handling.md > Objection: \"Health insurance is too expensive\" (v1.0)",
+      "scores": {
+        "dense": 0.423,
+        "bm25": 6.27,
+        "rrf": 0.0328
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_objection_obj_003",
+        "title": "Sales Playbook: Objection Handling (Health Insurance) > Objection: \"Health insurance is too expensive\"",
+        "scores": {
+          "dense": 0.423,
+          "bm25": 6.27,
+          "rrf": 0.0328
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_product_ff_003",
+        "title": "Nivaran Family Floater > Sum insured options",
+        "scores": {
+          "dense": 0.262,
+          "bm25": 0.0,
+          "rrf": 0.0284
+        },
+        "relevant": false
+      },
+      {
+        "record_id": "kb_company_home_003",
+        "title": "Health insurance that stays with you > Our health plans > Nivaran Family Floater",
+        "scores": {
+          "dense": 0.208,
+          "bm25": 0.0,
+          "rrf": 0.0276
+        },
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "Q11",
+    "collection": "health_in",
+    "type": "pricing",
+    "question": "How much is the premium for a 30 year old for 5 lakh cover?",
+    "verdict": "partially correct",
+    "explanation": "Expected section ranked #2; top hit was 'Indicative annual premium - Family Floater, 2 adults + 2 children'.",
+    "latency_ms": 7.6,
+    "top_hit": {
+      "record_id": "kb_pricing_prem_005",
+      "title": "Indicative annual premium - Family Floater, 2 adults + 2 children",
+      "content": "Eldest member aged 18-35 years, sum insured ₹5 lakh: indicative annual premium ₹11,900 (excluding GST).\nEldest member aged 18-35 years, sum insured ₹10 lakh: indicative annual premium ₹16,400 (excluding GST).\nEldest member aged 18-35 years, sum insured ₹25 lakh: indicative annual premium ₹23,800 (excluding GST).\nEldest member aged 18-35 years, sum insured ₹50 lakh: indicative annual premium ₹31,600 (excluding GST).\nEldest member aged 36-45 years, sum insured ₹5 lakh: indicative annual premium ₹15,600 (excluding GST).\nEldest member aged 36-45 years, sum insured ₹10 lakh: indicative annual premium ₹21,400 (excluding GST).\nEldest member aged 36-45 years, sum insured ₹25 lakh: indicative annual premium ₹30,900 (excluding GST).\nEldest member aged 36-45 years, sum insured ₹50 lakh: indicative annual premium ₹40,800 (excluding GST).",
+      "citation": "data/raw/health_in/tables/indicative-premium-chart.csv > Indicative annual premium - Family Floater, 2 adults + 2 children (v1.0)",
+      "scores": {
+        "dense": 0.631,
+        "bm25": 4.36,
+        "rrf": 0.0311
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_pricing_prem_005",
+        "title": "Indicative annual premium - Family Floater, 2 adults + 2 children",
+        "scores": {
+          "dense": 0.631,
+          "bm25": 4.36,
+          "rrf": 0.0311
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_pricing_prem_001",
+        "title": "Indicative annual premium - Essential, 1 adult",
+        "scores": {
+          "dense": 0.622,
+          "bm25": 3.77,
+          "rrf": 0.0302
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_product_sc_003",
+        "title": "Nivaran Senior Care > Sum insured options",
+        "scores": {
+          "dense": 0.485,
+          "bm25": 4.59,
+          "rrf": 0.0301
+        },
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "id": "Q12",
+    "collection": "health_in",
+    "type": "claims",
+    "question": "How do I get cashless treatment at a hospital?",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: cashless, get, hospital, treatment.",
+    "latency_ms": 7.0,
+    "top_hit": {
+      "record_id": "kb_faq_faqold_005",
+      "title": "FAQs > Where can I get cashless treatment?",
+      "content": "Cashless treatment is available at all our network hospitals. Show your Nivaran health card at the hospital insurance desk.",
+      "citation": "data/raw/health_in/website/faq-archive-2024.html > Where can I get cashless treatment? (v1.0)",
+      "scores": {
+        "dense": 0.796,
+        "bm25": 14.94,
+        "rrf": 0.0328
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_faq_faqold_005",
+        "title": "FAQs > Where can I get cashless treatment?",
+        "scores": {
+          "dense": 0.796,
+          "bm25": 14.94,
+          "rrf": 0.0328
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_claims_clm_001",
+        "title": "Claims made simple > Cashless claims",
+        "scores": {
+          "dense": 0.701,
+          "bm25": 8.33,
+          "rrf": 0.0323
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_company_home_005",
+        "title": "Health insurance that stays with you > Why choose Nivaran?",
+        "scores": {
+          "dense": 0.542,
+          "bm25": 4.67,
+          "rrf": 0.0315
+        },
+        "relevant": true
+      }
+    ]
+  },
+  {
+    "id": "Q13",
+    "collection": "health_in",
+    "type": "partnership",
+    "question": "What support do branch partners get?",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: branch, partners, support.",
+    "latency_ms": 6.6,
+    "top_hit": {
+      "record_id": "kb_partnership_benefits_prt_002",
+      "title": "Grow with Nivaran: branch partnership > Branch partnership benefits",
+      "content": "Operational, marketing, and technology support is provided to branch partners. This includes a dedicated relationship manager, co-branded marketing material, a digital point-of-sale platform for issuing policies, and claims assistance for customers sourced by the branch.",
+      "citation": "data/raw/health_in/website/partners.html > Branch partnership benefits (v1.0)",
+      "scores": {
+        "dense": 0.694,
+        "bm25": 12.75,
+        "rrf": 0.0328
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_partnership_benefits_prt_002",
+        "title": "Grow with Nivaran: branch partnership > Branch partnership benefits",
+        "scores": {
+          "dense": 0.694,
+          "bm25": 12.75,
+          "rrf": 0.0328
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_partnership_benefits_prt_003",
+        "title": "Grow with Nivaran: branch partnership > Partner eligibility",
+        "scores": {
+          "dense": 0.58,
+          "bm25": 8.41,
+          "rrf": 0.0323
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_partnership_benefits_prt_004",
+        "title": "Grow with Nivaran: branch partnership > How to apply",
+        "scores": {
+          "dense": 0.527,
+          "bm25": 3.33,
+          "rrf": 0.0313
+        },
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "Q14",
+    "collection": "health_in",
+    "type": "form",
+    "question": "What details do I need to fill in the proposal form?",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: details, form, proposal.",
+    "latency_ms": 7.0,
+    "top_hit": {
+      "record_id": "kb_form_form_001",
+      "title": "Health insurance proposal form > Required details",
+      "content": "To apply, the proposal form asks for these mandatory details: full name, date of birth, mobile number, PIN code, plan name, sum insured, number of members to be insured, pre-existing disease declaration (yes or no), nominee name and relationship, consent to be contacted. Optional details: email address, details of any pre-existing disease, occupation, PAN (mandatory if annual premium above ₹50,000). Fields marked * are mandatory. All information must be accurate; incorrect or incomplete disclosure may affect claims.",
+      "citation": "data/raw/health_in/forms/proposal-form.html > Required details (v1.0)",
+      "scores": {
+        "dense": 0.597,
+        "bm25": 10.96,
+        "rrf": 0.0328
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_form_form_001",
+        "title": "Health insurance proposal form > Required details",
+        "scores": {
+          "dense": 0.597,
+          "bm25": 10.96,
+          "rrf": 0.0328
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_partnership_benefits_prt_004",
+        "title": "Grow with Nivaran: branch partnership > How to apply",
+        "scores": {
+          "dense": 0.413,
+          "bm25": 3.58,
+          "rrf": 0.0315
+        },
+        "relevant": false
+      },
+      {
+        "record_id": "kb_faq_faq_013",
+        "title": "Frequently asked questions > How do I buy a policy?",
+        "scores": {
+          "dense": 0.331,
+          "bm25": 5.55,
+          "rrf": 0.0315
+        },
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "Q15",
+    "collection": "health_in",
+    "type": "out_of_scope",
+    "question": "What is your claim settlement ratio?",
+    "verdict": "correct",
+    "explanation": "No record passed the relevance gate, so the agent says the information is unavailable.",
+    "latency_ms": 6.9,
+    "top_hit": {
+      "record_id": "kb_faq_faq_005",
+      "title": "Frequently asked questions > How does the no claim bonus work?",
+      "content": "For every claim-free policy year, the sum insured increases by 10% of the base sum insured, up to a maximum of 50%. The no claim bonus is not reduced if a claim is made later.",
+      "citation": "data/raw/health_in/website/faq.html > How does the no claim bonus work? (v1.0)",
+      "scores": {
+        "dense": 0.415,
+        "bm25": 3.07,
+        "rrf": 0.032
+      },
+      "relevant": false
+    },
+    "top3": [
+      {
+        "record_id": "kb_faq_faq_005",
+        "title": "Frequently asked questions > How does the no claim bonus work?",
+        "scores": {
+          "dense": 0.415,
+          "bm25": 3.07,
+          "rrf": 0.032
+        },
+        "relevant": false
+      },
+      {
+        "record_id": "kb_claims_clm_002",
+        "title": "Claims made simple > Reimbursement claims",
+        "scores": {
+          "dense": 0.474,
+          "bm25": 2.18,
+          "rrf": 0.0318
+        },
+        "relevant": false
+      },
+      {
+        "record_id": "kb_policy_sc_004",
+        "title": "Nivaran Senior Care > Co-payment",
+        "scores": {
+          "dense": 0.375,
+          "bm25": 2.54,
+          "rrf": 0.0315
+        },
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "Q16",
+    "collection": "health_in",
+    "type": "out_of_scope",
+    "question": "Can you book me a flight to Goa?",
+    "verdict": "correct",
+    "explanation": "No record passed the relevance gate, so the agent says the information is unavailable.",
+    "latency_ms": 7.1,
+    "top_hit": {
+      "record_id": "kb_product_ess_004",
+      "title": "Nivaran Essential > Key benefits",
+      "content": "In-patient hospitalisation expenses up to the sum insured.\nPre-hospitalisation expenses for 60 days and post-hospitalisation expenses for 90 days.\nAll day care procedures covered.\nRoom rent: single private AC room for sum insured of ₹5 lakh and above; for ₹3 lakh sum insured, room rent is limited to 1% of the sum insured per day.\nRoad ambulance charges up to ₹3,000 per hospitalisation.\nNo co-payment.",
+      "citation": "data/raw/health_in/website/essential.html > Key benefits (v1.0)",
+      "scores": {
+        "dense": 0.215,
+        "bm25": 0.0,
+        "rrf": 0.0304
+      },
+      "relevant": false
+    },
+    "top3": [
+      {
+        "record_id": "kb_product_ess_004",
+        "title": "Nivaran Essential > Key benefits",
+        "scores": {
+          "dense": 0.215,
+          "bm25": 0.0,
+          "rrf": 0.0304
+        },
+        "relevant": false
+      },
+      {
+        "record_id": "kb_product_ff_004",
+        "title": "Nivaran Family Floater > Key benefits",
+        "scores": {
+          "dense": 0.219,
+          "bm25": 0.0,
+          "rrf": 0.0296
+        },
+        "relevant": false
+      },
+      {
+        "record_id": "kb_product_ess_003",
+        "title": "Nivaran Essential > Sum insured options",
+        "scores": {
+          "dense": 0.177,
+          "bm25": 0.0,
+          "rrf": 0.0292
+        },
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "Q17",
+    "collection": "life_ph",
+    "type": "policy",
+    "question": "Hanggang kailan po ang grace period ng premium ko?",
+    "verdict": "partially correct",
+    "explanation": "Expected section ranked #2; top hit was 'Objection Handling Guide - Premium Reminder Calls (Philippines) > \"Wala pa akong pera ngayon\" (I do not have money right now)'.",
+    "latency_ms": 7.4,
+    "top_hit": {
+      "record_id": "kb_objection_obj_002",
+      "title": "Objection Handling Guide - Premium Reminder Calls (Philippines) > \"Wala pa akong pera ngayon\" (I do not have money right now)",
+      "content": "Acknowledge the situation first. Explain that the policy is still covered during the 31-day grace period and there is no penalty if paid within the grace period. Ask for a target payment date within the grace period. If the customer cannot pay within the grace period, mention the Automatic Premium Loan if the policy has it, or offer a callback from a Liwanag financial advisor to review options.\nSample phrasing: \"Naiintindihan ko po. Covered pa rin po kayo hanggang sa end ng grace period, at walang penalty basta mabayaran within that period. Kailan po kaya kayo makakapag-settle?\"",
+      "citation": "data/raw/life_ph/objection-handling-ph.md > \"Wala pa akong pera ngayon\" (I do not have money right now) (v1.0)",
+      "scores": {
+        "dense": 0.618,
+        "bm25": 4.82,
+        "rrf": 0.0328
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_objection_obj_002",
+        "title": "Objection Handling Guide - Premium Reminder Calls (Philippines) > \"Wala pa akong pera ngayon\" (I do not have money right now)",
+        "scores": {
+          "dense": 0.618,
+          "bm25": 4.82,
+          "rrf": 0.0328
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_policy_pay_004",
+        "title": "Premium Payment, Grace Period, Lapse and Reinstatement > Grace period",
+        "scores": {
+          "dense": 0.582,
+          "bm25": 1.33,
+          "rrf": 0.0323
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_pricing_pay_001",
+        "title": "Premium Payment, Grace Period, Lapse and Reinstatement > Premium due date and payment modes",
+        "scores": {
+          "dense": 0.511,
+          "bm25": 0.95,
+          "rrf": 0.0306
+        },
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "Q18",
+    "collection": "life_ph",
+    "type": "objection",
+    "question": "Wala pa akong pera pambayad ngayon eh.",
+    "verdict": "partially correct",
+    "explanation": "Expected section ranked #2; top hit was 'Premium Payment, Grace Period, Lapse and Reinstatement > Hardship options'.",
+    "latency_ms": 7.6,
+    "top_hit": {
+      "record_id": "kb_policy_pay_008",
+      "title": "Premium Payment, Grace Period, Lapse and Reinstatement > Hardship options",
+      "content": "Policyholders facing temporary financial difficulty can request a change to a lower payment frequency on the next anniversary, use the APL if available, or request a review of the face amount with a Liwanag financial advisor. Premium holidays or discounts are not offered.",
+      "citation": "data/raw/life_ph/premium-payment-and-lapse.md > Hardship options (v1.0)",
+      "scores": {
+        "dense": 0.428,
+        "bm25": 6.04,
+        "rrf": 0.0315
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_policy_pay_008",
+        "title": "Premium Payment, Grace Period, Lapse and Reinstatement > Hardship options",
+        "scores": {
+          "dense": 0.428,
+          "bm25": 6.04,
+          "rrf": 0.0315
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_objection_obj_002",
+        "title": "Objection Handling Guide - Premium Reminder Calls (Philippines) > \"Wala pa akong pera ngayon\" (I do not have money right now)",
+        "scores": {
+          "dense": 0.409,
+          "bm25": 13.44,
+          "rrf": 0.0313
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_policy_pay_005",
+        "title": "Premium Payment, Grace Period, Lapse and Reinstatement > Automatic Premium Loan",
+        "scores": {
+          "dense": 0.434,
+          "bm25": 1.06,
+          "rrf": 0.0308
+        },
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "Q19",
+    "collection": "life_ph",
+    "type": "product",
+    "question": "Paano po magpalit ng beneficiary sa policy ko?",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: beneficiary.",
+    "latency_ms": 7.0,
+    "top_hit": {
+      "record_id": "kb_policy_prod_005",
+      "title": "Liwanag Kalinga Protect - Product Guide (Bancassurance via Sinag Bank) > Beneficiaries",
+      "content": "The policyholder names one or more beneficiaries and their share of the benefit. A revocable beneficiary can be changed by the policyholder at any time by submitting a Change of Beneficiary form at any Sinag Bank branch or Liwanag Life service center, with a valid ID. Changing an irrevocable beneficiary requires the written consent of that beneficiary. Beneficiary changes cannot be processed over a phone call.",
+      "citation": "data/raw/life_ph/kalinga-protect-product-guide.md > Beneficiaries (v1.0)",
+      "scores": {
+        "dense": 0.616,
+        "bm25": 6.68,
+        "rrf": 0.0328
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_policy_prod_005",
+        "title": "Liwanag Kalinga Protect - Product Guide (Bancassurance via Sinag Bank) > Beneficiaries",
+        "scores": {
+          "dense": 0.616,
+          "bm25": 6.68,
+          "rrf": 0.0328
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_policy_pay_008",
+        "title": "Premium Payment, Grace Period, Lapse and Reinstatement > Hardship options",
+        "scores": {
+          "dense": 0.532,
+          "bm25": 1.92,
+          "rrf": 0.032
+        },
+        "relevant": false
+      },
+      {
+        "record_id": "kb_pricing_pay_001",
+        "title": "Premium Payment, Grace Period, Lapse and Reinstatement > Premium due date and payment modes",
+        "scores": {
+          "dense": 0.489,
+          "bm25": 1.69,
+          "rrf": 0.031
+        },
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "Q20",
+    "collection": "life_ph",
+    "type": "out_of_scope",
+    "question": "Magkano po ang presyo ng bigas ngayon?",
+    "verdict": "correct",
+    "explanation": "No record passed the relevance gate, so the agent says the information is unavailable.",
+    "latency_ms": 6.5,
+    "top_hit": {
+      "record_id": "kb_objection_obj_002",
+      "title": "Objection Handling Guide - Premium Reminder Calls (Philippines) > \"Wala pa akong pera ngayon\" (I do not have money right now)",
+      "content": "Acknowledge the situation first. Explain that the policy is still covered during the 31-day grace period and there is no penalty if paid within the grace period. Ask for a target payment date within the grace period. If the customer cannot pay within the grace period, mention the Automatic Premium Loan if the policy has it, or offer a callback from a Liwanag financial advisor to review options.\nSample phrasing: \"Naiintindihan ko po. Covered pa rin po kayo hanggang sa end ng grace period, at walang penalty basta mabayaran within that period. Kailan po kaya kayo makakapag-settle?\"",
+      "citation": "data/raw/life_ph/objection-handling-ph.md > \"Wala pa akong pera ngayon\" (I do not have money right now) (v1.0)",
+      "scores": {
+        "dense": 0.33,
+        "bm25": 1.95,
+        "rrf": 0.0323
+      },
+      "relevant": false
+    },
+    "top3": [
+      {
+        "record_id": "kb_objection_obj_002",
+        "title": "Objection Handling Guide - Premium Reminder Calls (Philippines) > \"Wala pa akong pera ngayon\" (I do not have money right now)",
+        "scores": {
+          "dense": 0.33,
+          "bm25": 1.95,
+          "rrf": 0.0323
+        },
+        "relevant": false
+      },
+      {
+        "record_id": "kb_product_prod_003",
+        "title": "Liwanag Kalinga Protect - Product Guide (Bancassurance via Sinag Bank) > Cash value",
+        "scores": {
+          "dense": 0.338,
+          "bm25": 0.0,
+          "rrf": 0.032
+        },
+        "relevant": false
+      },
+      {
+        "record_id": "kb_policy_prod_006",
+        "title": "Liwanag Kalinga Protect - Product Guide (Bancassurance via Sinag Bank) > Coverage while premiums are unpaid",
+        "scores": {
+          "dense": 0.292,
+          "bm25": 0.0,
+          "rrf": 0.0308
+        },
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "Q21",
+    "collection": "finance_id",
+    "type": "policy",
+    "question": "Berapa dendanya kalau telat bayar angsuran?",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: angsuran, dendanya.",
+    "latency_ms": 9.0,
+    "top_hit": {
+      "record_id": "kb_objection_obj_004",
+      "title": "Panduan Penanganan Keberatan - Panggilan Pengingat Angsuran > Keberatan: \"Dendanya kok mahal?\"",
+      "content": "Jelaskan cara hitung denda: 0,2% per hari dari angsuran yang terlambat, paling banyak 20% dari angsuran. Membayar lebih cepat membuat denda lebih kecil. Petugas telepon tidak dapat menghapus denda.",
+      "citation": "data/raw/finance_id/penanganan-keberatan.md > Keberatan: \"Dendanya kok mahal?\" (v1.0)",
+      "scores": {
+        "dense": 0.656,
+        "bm25": 6.95,
+        "rrf": 0.0328
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_objection_obj_004",
+        "title": "Panduan Penanganan Keberatan - Panggilan Pengingat Angsuran > Keberatan: \"Dendanya kok mahal?\"",
+        "scores": {
+          "dense": 0.656,
+          "bm25": 6.95,
+          "rrf": 0.0328
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_objection_obj_002",
+        "title": "Panduan Penanganan Keberatan - Panggilan Pengingat Angsuran > Keberatan: \"Belum gajian\" atau \"Lagi nggak ada uang\"",
+        "scores": {
+          "dense": 0.546,
+          "bm25": 2.11,
+          "rrf": 0.0315
+        },
+        "relevant": false
+      },
+      {
+        "record_id": "kb_policy_ang_004",
+        "title": "Ketentuan Angsuran, Jatuh Tempo dan Denda - Pembiayaan Motor Arunika > Janji bayar",
+        "scores": {
+          "dense": 0.532,
+          "bm25": 3.55,
+          "rrf": 0.0315
+        },
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "Q22",
+    "collection": "finance_id",
+    "type": "faq",
+    "question": "Bayar cicilan bisa lewat mana aja ya?",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: bayar, mana.",
+    "latency_ms": 8.6,
+    "top_hit": {
+      "record_id": "kb_pricing_bayar_001",
+      "title": "Cara Pembayaran Angsuran Arunika > Kanal pembayaran",
+      "content": "Angsuran dapat dibayar melalui:\n- Virtual account melalui mobile banking, internet banking, atau ATM bank mana pun. Nomor virtual account adalah kode 8812 diikuti nomor kontrak 10 digit.\n- Gerai minimarket yang bekerja sama, dengan menyebutkan pembayaran \"Arunika Finance\" dan nomor kontrak.\n- Aplikasi Arunika, menu Bayar Angsuran.\n- Kasir di kantor cabang Arunika pada jam operasional, Senin sampai Sabtu pukul 08.00 sampai 15.00.",
+      "citation": "data/raw/finance_id/cara-pembayaran.md > Kanal pembayaran (v1.0)",
+      "scores": {
+        "dense": 0.372,
+        "bm25": 6.27,
+        "rrf": 0.0315
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_pricing_bayar_001",
+        "title": "Cara Pembayaran Angsuran Arunika > Kanal pembayaran",
+        "scores": {
+          "dense": 0.372,
+          "bm25": 6.27,
+          "rrf": 0.0315
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_pricing_bayar_004",
+        "title": "Cara Pembayaran Angsuran Arunika > Sudah bayar tetapi masih ditagih",
+        "scores": {
+          "dense": 0.41,
+          "bm25": 3.14,
+          "rrf": 0.031
+        },
+        "relevant": false
+      },
+      {
+        "record_id": "kb_policy_ang_005",
+        "title": "Ketentuan Angsuran, Jatuh Tempo dan Denda - Pembiayaan Motor Arunika > Pelaporan SLIK",
+        "scores": {
+          "dense": 0.487,
+          "bm25": 1.34,
+          "rrf": 0.0309
+        },
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "Q23",
+    "collection": "finance_id",
+    "type": "objection",
+    "question": "Saya kena PHK bulan lalu, belum bisa bayar.",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: semantic match only.",
+    "latency_ms": 7.8,
+    "top_hit": {
+      "record_id": "kb_policy_ang_006",
+      "title": "Ketentuan Angsuran, Jatuh Tempo dan Denda - Pembiayaan Motor Arunika > Keringanan dan restrukturisasi",
+      "content": "Konsumen yang mengalami kesulitan keuangan karena kondisi tertentu, misalnya kehilangan pekerjaan, sakit, atau musibah, dapat mengajukan permohonan restrukturisasi seperti perpanjangan tenor atau penjadwalan ulang angsuran. Permohonan diajukan melalui kantor cabang dengan dokumen pendukung dan dinilai oleh tim Arunika. Persetujuan tidak dijamin, dan petugas telepon tidak dapat menyetujui restrukturisasi.",
+      "citation": "data/raw/finance_id/ketentuan-angsuran-dan-denda.md > Keringanan dan restrukturisasi (v1.0)",
+      "scores": {
+        "dense": 0.383,
+        "bm25": 7.0,
+        "rrf": 0.0323
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_policy_ang_006",
+        "title": "Ketentuan Angsuran, Jatuh Tempo dan Denda - Pembiayaan Motor Arunika > Keringanan dan restrukturisasi",
+        "scores": {
+          "dense": 0.383,
+          "bm25": 7.0,
+          "rrf": 0.0323
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_objection_obj_002",
+        "title": "Panduan Penanganan Keberatan - Panggilan Pengingat Angsuran > Keberatan: \"Belum gajian\" atau \"Lagi nggak ada uang\"",
+        "scores": {
+          "dense": 0.391,
+          "bm25": 3.12,
+          "rrf": 0.0318
+        },
+        "relevant": false
+      },
+      {
+        "record_id": "kb_faq_faq_007",
+        "title": "Tanya Jawab Pembiayaan Motor Arunika > Apakah motor saya sudah diasuransikan?",
+        "scores": {
+          "dense": 0.32,
+          "bm25": 2.3,
+          "rrf": 0.0308
+        },
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "Q24",
+    "collection": "finance_id",
+    "type": "faq",
+    "question": "Kapan BPKB motor saya bisa diambil?",
+    "verdict": "correct",
+    "explanation": "Top hit is the expected section; shared terms: bpkb, diambil, motor.",
+    "latency_ms": 7.0,
+    "top_hit": {
+      "record_id": "kb_faq_faq_004",
+      "title": "Tanya Jawab Pembiayaan Motor Arunika > Kapan BPKB bisa diambil?",
+      "content": "BPKB dapat diambil di kantor cabang paling cepat 14 hari kerja setelah seluruh kewajiban lunas, dengan membawa KTP asli dan bukti pelunasan.",
+      "citation": "data/raw/finance_id/faq-pembiayaan.md > Kapan BPKB bisa diambil? (v1.0)",
+      "scores": {
+        "dense": 0.586,
+        "bm25": 9.42,
+        "rrf": 0.0328
+      },
+      "relevant": true
+    },
+    "top3": [
+      {
+        "record_id": "kb_faq_faq_004",
+        "title": "Tanya Jawab Pembiayaan Motor Arunika > Kapan BPKB bisa diambil?",
+        "scores": {
+          "dense": 0.586,
+          "bm25": 9.42,
+          "rrf": 0.0328
+        },
+        "relevant": true
+      },
+      {
+        "record_id": "kb_faq_faq_007",
+        "title": "Tanya Jawab Pembiayaan Motor Arunika > Apakah motor saya sudah diasuransikan?",
+        "scores": {
+          "dense": 0.461,
+          "bm25": 1.0,
+          "rrf": 0.0315
+        },
+        "relevant": false
+      },
+      {
+        "record_id": "kb_faq_faq_001",
+        "title": "Tanya Jawab Pembiayaan Motor Arunika > Berapa pilihan tenor pembiayaan motor?",
+        "scores": {
+          "dense": 0.385,
+          "bm25": 1.04,
+          "rrf": 0.0315
+        },
+        "relevant": false
+      }
+    ]
+  },
+  {
+    "id": "Q25",
+    "collection": "finance_id",
+    "type": "out_of_scope",
+    "question": "Cuaca di Surabaya besok gimana ya?",
+    "verdict": "correct",
+    "explanation": "No record passed the relevance gate, so the agent says the information is unavailable.",
+    "latency_ms": 7.3,
+    "top_hit": {
+      "record_id": "kb_policy_ang_002",
+      "title": "Ketentuan Angsuran, Jatuh Tempo dan Denda - Pembiayaan Motor Arunika > Jatuh tempo angsuran",
+      "content": "Angsuran dibayar setiap bulan pada tanggal jatuh tempo yang tercantum di kontrak pembiayaan. Jika tanggal jatuh tempo jatuh pada hari Minggu atau hari libur nasional, pembayaran tetap harus dilakukan paling lambat pada tanggal tersebut melalui kanal pembayaran online, atau sehari sebelumnya melalui kantor cabang.",
+      "citation": "data/raw/finance_id/ketentuan-angsuran-dan-denda.md > Jatuh tempo angsuran (v1.0)",
+      "scores": {
+        "dense": 0.282,
+        "bm25": 0.0,
+        "rrf": 0.0323
+      },
+      "relevant": false
+    },
+    "top3": [
+      {
+        "record_id": "kb_policy_ang_002",
+        "title": "Ketentuan Angsuran, Jatuh Tempo dan Denda - Pembiayaan Motor Arunika > Jatuh tempo angsuran",
+        "scores": {
+          "dense": 0.282,
+          "bm25": 0.0,
+          "rrf": 0.0323
+        },
+        "relevant": false
+      },
+      {
+        "record_id": "kb_policy_ang_004",
+        "title": "Ketentuan Angsuran, Jatuh Tempo dan Denda - Pembiayaan Motor Arunika > Janji bayar",
+        "scores": {
+          "dense": 0.291,
+          "bm25": 0.0,
+          "rrf": 0.032
+        },
+        "relevant": false
+      },
+      {
+        "record_id": "kb_policy_ang_003",
+        "title": "Ketentuan Angsuran, Jatuh Tempo dan Denda - Pembiayaan Motor Arunika > Denda keterlambatan",
+        "scores": {
+          "dense": 0.28,
+          "bm25": 0.0,
+          "rrf": 0.0317
+        },
+        "relevant": false
+      }
+    ]
+  }
+]
