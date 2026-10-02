@@ -1,0 +1,929 @@
+{
+  "call_id": "20261002-104157-cad1",
+  "profile_id": "health_lead_in",
+  "profile_title": "Health insurance lead qualification",
+  "market": "India",
+  "source": "web",
+  "started_at": "2026-10-02T05:11:57+00:00",
+  "duration_s": 210.6,
+  "end_reason": "submit",
+  "outcome": {
+    "status": "qualified",
+    "reasons": [
+      "all required details captured; no declared conditions"
+    ],
+    "missing": [],
+    "plan_recommendation": [
+      "Essential"
+    ],
+    "label": "Qualified - advisor follow-up"
+  },
+  "fields": {
+    "full_name": "Utkarsh Rai",
+    "age": 21,
+    "city": "Varanasi",
+    "members_to_cover": "self",
+    "eldest_member_age": 21,
+    "pre_existing_conditions": "none",
+    "sum_insured_lakh": 3,
+    "annual_budget_inr": null,
+    "existing_cover": null,
+    "consent_to_contact": true,
+    "callback_time": "tomorrow afternoon"
+  },
+  "actions": [
+    {
+      "type": "lead_created",
+      "record_id": "LEA-c5d2933a",
+      "status": "qualified"
+    }
+  ],
+  "crm_summary_id": "CAL-a886d563",
+  "crm_summary": "Health insurance lead qualification call (India). Outcome: Qualified - advisor follow-up. Reasons: all required details captured; no declared conditions. Captured - name: Utkarsh Rai, age: 21, city: Varanasi, members to cover: self, eldest member's age: 21, pre-existing conditions: none, sum insured: 3, consent to be contacted: yes, callback time: tomorrow afternoon. Suggested plan: Essential. Actions: lead_created.",
+  "flags": [],
+  "conflicts_detected": [],
+  "verified": true,
+  "metrics": {
+    "agent_turns": 12,
+    "grounded_answers": 0,
+    "unavailable_answers": 1,
+    "fallback_turns": 0,
+    "corrective_reruns": 1,
+    "tokens": 26738,
+    "p50_stt_ms": 315,
+    "p95_stt_ms": 476,
+    "p50_retrieval_ms": 27,
+    "p95_retrieval_ms": 49,
+    "p50_llm_ms": 915,
+    "p95_llm_ms": 1414,
+    "p50_tts_ms": 2090,
+    "p95_tts_ms": 2922,
+    "p50_total_ms": 3419,
+    "p95_total_ms": 4599
+  },
+  "turns": [
+    {
+      "role": "agent",
+      "text": "Good morning! This is Ananya, a virtual assistant from Nivaran Health Insurance. This call is recorded for quality and training. You had asked about health insurance on our website. Is this a good time to talk for about three minutes?",
+      "t": 0.0,
+      "kind": "greeting",
+      "timings": {
+        "tts_ms": 0
+      },
+      "answer_status": null,
+      "action": null,
+      "citations": [],
+      "retrieved": [],
+      "query": null,
+      "field_updates": {},
+      "tokens": 0,
+      "reruns": 0,
+      "outcome": null,
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Yes, go ahead.",
+      "t": 22.82,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.352,
+        "no_speech_prob": 0,
+        "ms": 298,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "May I have your full name, please?",
+      "t": 23.75,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 298,
+        "retrieval_ms": 15,
+        "llm_ms": 915,
+        "tts_ms": 0,
+        "total_ms": 1229
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_company_home_004",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Senior Care",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.154,
+            "bm25": 0.0,
+            "rrf": 0.032
+          }
+        },
+        {
+          "record_id": "kb_company_home_002",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Essential",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.118,
+            "bm25": 0.0,
+            "rrf": 0.032
+          }
+        },
+        {
+          "record_id": "kb_company_home_001",
+          "title": "Health insurance that stays with you",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.08,
+            "bm25": 0.0,
+            "rrf": 0.0305
+          }
+        }
+      ],
+      "query": "Yes, go ahead.",
+      "field_updates": {},
+      "tokens": 2070,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Thank you.",
+      "t": 32.9,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.686,
+        "no_speech_prob": 0,
+        "ms": 340,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "May I have your full name, please?",
+      "t": 36.07,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 340,
+        "retrieval_ms": 27,
+        "llm_ms": 3150,
+        "tts_ms": 0,
+        "total_ms": 3519
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_company_home_004",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Senior Care",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.123,
+            "bm25": 0.0,
+            "rrf": 0.0318
+          }
+        },
+        {
+          "record_id": "kb_company_home_002",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Essential",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.078,
+            "bm25": 0.0,
+            "rrf": 0.0291
+          }
+        },
+        {
+          "record_id": "kb_qualification_ess_002",
+          "title": "Nivaran Essential > Eligibility",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.077,
+            "bm25": 0.0,
+            "rrf": 0.0277
+          }
+        }
+      ],
+      "query": "Yes, go ahead. Thank you.",
+      "field_updates": {},
+      "tokens": 3279,
+      "reruns": 1,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Utkarsh Rai",
+      "t": 41.62,
+      "ignored": false,
+      "asr": null
+    },
+    {
+      "role": "agent",
+      "text": "May I know your age, please?",
+      "t": 43.81,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": null,
+        "retrieval_ms": 49,
+        "llm_ms": 695,
+        "tts_ms": 1435,
+        "total_ms": 2181
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_product_ess_003",
+          "title": "Nivaran Essential > Sum insured options",
+          "category": "product",
+          "relevant": false,
+          "scores": {
+            "dense": 0.194,
+            "bm25": 0.0,
+            "rrf": 0.0303
+          }
+        },
+        {
+          "record_id": "kb_company_home_001",
+          "title": "Health insurance that stays with you",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.094,
+            "bm25": 0.0,
+            "rrf": 0.0296
+          }
+        },
+        {
+          "record_id": "kb_qualification_ess_002",
+          "title": "Nivaran Essential > Eligibility",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.109,
+            "bm25": 0.0,
+            "rrf": 0.0292
+          }
+        }
+      ],
+      "query": "Thank you. Utkarsh Rai",
+      "field_updates": {
+        "full_name": "Utkarsh Rai"
+      },
+      "tokens": 2064,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Twenty-one.",
+      "t": 50.41,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.71,
+        "no_speech_prob": 0,
+        "ms": 297,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Thank you, Utkarsh. Which city do you reside in?",
+      "t": 52.69,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 297,
+        "retrieval_ms": 35,
+        "llm_ms": 635,
+        "tts_ms": 1605,
+        "total_ms": 2573
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_qualification_ess_002",
+          "title": "Nivaran Essential > Eligibility",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.275,
+            "bm25": 0.0,
+            "rrf": 0.03
+          }
+        },
+        {
+          "record_id": "kb_product_ess_003",
+          "title": "Nivaran Essential > Sum insured options",
+          "category": "product",
+          "relevant": false,
+          "scores": {
+            "dense": 0.204,
+            "bm25": 0.0,
+            "rrf": 0.0288
+          }
+        },
+        {
+          "record_id": "kb_objection_obj_004",
+          "title": "Sales Playbook: Objection Handling (Health Insurance) > Objection: \"I am young and healthy, I don't need it now\"",
+          "category": "objection",
+          "relevant": false,
+          "scores": {
+            "dense": 0.188,
+            "bm25": 1.97,
+            "rrf": 0.0284
+          }
+        }
+      ],
+      "query": "Utkarsh Rai Twenty-one.",
+      "field_updates": {
+        "age": 21
+      },
+      "tokens": 2238,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Varanasi",
+      "t": 61.44,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.575,
+        "no_speech_prob": 0,
+        "ms": 315,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Thank you, Utkarsh. Which members would you like to cover?",
+      "t": 65.03,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 315,
+        "retrieval_ms": 17,
+        "llm_ms": 649,
+        "tts_ms": 2922,
+        "total_ms": 3905
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_qualification_ess_002",
+          "title": "Nivaran Essential > Eligibility",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.297,
+            "bm25": 0.0,
+            "rrf": 0.0295
+          }
+        },
+        {
+          "record_id": "kb_product_ess_003",
+          "title": "Nivaran Essential > Sum insured options",
+          "category": "product",
+          "relevant": false,
+          "scores": {
+            "dense": 0.27,
+            "bm25": 0.0,
+            "rrf": 0.0292
+          }
+        },
+        {
+          "record_id": "kb_qualification_ff_002",
+          "title": "Nivaran Family Floater > Who can be covered",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.271,
+            "bm25": 0.0,
+            "rrf": 0.0289
+          }
+        }
+      ],
+      "query": "Twenty-one. Varanasi",
+      "field_updates": {
+        "city": "Varanasi"
+      },
+      "tokens": 2234,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Only myself.",
+      "t": 74.75,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.493,
+        "no_speech_prob": 0,
+        "ms": 476,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "May I know the age of the eldest person you want to cover?",
+      "t": 76.69,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 476,
+        "retrieval_ms": 18,
+        "llm_ms": 630,
+        "tts_ms": 1293,
+        "total_ms": 2418
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_product_ess_001",
+          "title": "Nivaran Essential",
+          "category": "product",
+          "relevant": false,
+          "scores": {
+            "dense": 0.225,
+            "bm25": 0.0,
+            "rrf": 0.0315
+          }
+        },
+        {
+          "record_id": "kb_company_home_005",
+          "title": "Health insurance that stays with you > Why choose Nivaran?",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.224,
+            "bm25": 0.0,
+            "rrf": 0.0315
+          }
+        },
+        {
+          "record_id": "kb_qualification_ess_002",
+          "title": "Nivaran Essential > Eligibility",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.207,
+            "bm25": 0.0,
+            "rrf": 0.0306
+          }
+        }
+      ],
+      "query": "Varanasi Only myself.",
+      "field_updates": {
+        "full_name": "Utkarsh Rai",
+        "age": 21,
+        "city": "Varanasi",
+        "members_to_cover": "self"
+      },
+      "tokens": 2260,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "21 years.",
+      "t": 84.78,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.712,
+        "no_speech_prob": 0,
+        "ms": 302,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Do you have any pre‑existing medical conditions, or should I note “none”? Also, what sum insured are you looking for in lakh rupees? And would you consent to be contacted by a licensed Nivaran advisor, and if so, please share a convenient day and time for the callback.",
+      "t": 105.4,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 302,
+        "retrieval_ms": 16,
+        "llm_ms": 1414,
+        "tts_ms": 2258,
+        "total_ms": 20924
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_pricing_prem_002",
+          "title": "Indicative annual premium - Essential, 1 adult",
+          "category": "pricing",
+          "relevant": false,
+          "scores": {
+            "dense": 0.338,
+            "bm25": 3.37,
+            "rrf": 0.0315
+          }
+        },
+        {
+          "record_id": "kb_qualification_uw_003",
+          "title": "Retail Health Underwriting Guidelines > Maximum sum insured by age of eldest member",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.345,
+            "bm25": 1.79,
+            "rrf": 0.0312
+          }
+        },
+        {
+          "record_id": "kb_qualification_ff_002",
+          "title": "Nivaran Family Floater > Who can be covered",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.384,
+            "bm25": 1.51,
+            "rrf": 0.0311
+          }
+        }
+      ],
+      "query": "Only myself. 21 years.",
+      "field_updates": {
+        "eldest_member_age": 21
+      },
+      "tokens": 2618,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "No, I don't have any pre-existing medical condition.",
+      "t": 129.88,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.156,
+        "no_speech_prob": 0,
+        "ms": 300,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Thank you for confirming. What sum insured in lakh rupees would you like?",
+      "t": 132.94,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 300,
+        "retrieval_ms": 61,
+        "llm_ms": 588,
+        "tts_ms": 2410,
+        "total_ms": 3360
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_qualification_uw_004",
+          "title": "Retail Health Underwriting Guidelines > Medical examination requirements",
+          "category": "qualification",
+          "relevant": true,
+          "scores": {
+            "dense": 0.539,
+            "bm25": 6.98,
+            "rrf": 0.0323
+          }
+        },
+        {
+          "record_id": "kb_faq_faq_001",
+          "title": "Frequently asked questions > What is a pre-existing disease?",
+          "category": "faq",
+          "relevant": true,
+          "scores": {
+            "dense": 0.497,
+            "bm25": 10.2,
+            "rrf": 0.0323
+          }
+        },
+        {
+          "record_id": "kb_faq_faq_008",
+          "title": "Frequently asked questions > Do I need a medical test to buy a policy?",
+          "category": "faq",
+          "relevant": true,
+          "scores": {
+            "dense": 0.498,
+            "bm25": 6.82,
+            "rrf": 0.0318
+          }
+        }
+      ],
+      "query": "No, I don't have any pre-existing medical condition.",
+      "field_updates": {
+        "pre_existing_conditions": "none"
+      },
+      "tokens": 2448,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Three legs rubí.",
+      "t": 142.02,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.422,
+        "no_speech_prob": 0,
+        "ms": 365,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Could you please tell me the sum insured you prefer, in lakh rupees?",
+      "t": 144.13,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 365,
+        "retrieval_ms": 47,
+        "llm_ms": 653,
+        "tts_ms": 1418,
+        "total_ms": 2484
+      },
+      "answer_status": "info_unavailable",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_qualification_uw_004",
+          "title": "Retail Health Underwriting Guidelines > Medical examination requirements",
+          "category": "qualification",
+          "relevant": true,
+          "scores": {
+            "dense": 0.47,
+            "bm25": 6.98,
+            "rrf": 0.0323
+          }
+        },
+        {
+          "record_id": "kb_faq_faq_001",
+          "title": "Frequently asked questions > What is a pre-existing disease?",
+          "category": "faq",
+          "relevant": true,
+          "scores": {
+            "dense": 0.342,
+            "bm25": 10.2,
+            "rrf": 0.032
+          }
+        },
+        {
+          "record_id": "kb_faq_faq_008",
+          "title": "Frequently asked questions > Do I need a medical test to buy a policy?",
+          "category": "faq",
+          "relevant": true,
+          "scores": {
+            "dense": 0.409,
+            "bm25": 6.82,
+            "rrf": 0.0318
+          }
+        }
+      ],
+      "query": "No, I don't have any pre-existing medical condition. Three legs rubí.",
+      "field_updates": {},
+      "tokens": 2461,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Three.",
+      "t": 153.63,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.584,
+        "no_speech_prob": 0,
+        "ms": 366,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Great, a three lakh sum insured. Do we have your consent to be contacted by a licensed Nivaran advisor, and could you share a preferred day and time for the callback?",
+      "t": 157.86,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 366,
+        "retrieval_ms": 27,
+        "llm_ms": 1063,
+        "tts_ms": 3142,
+        "total_ms": 4599
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_company_home_002",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Essential",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.075,
+            "bm25": 0.0,
+            "rrf": 0.0304
+          }
+        },
+        {
+          "record_id": "kb_product_ess_003",
+          "title": "Nivaran Essential > Sum insured options",
+          "category": "product",
+          "relevant": false,
+          "scores": {
+            "dense": 0.109,
+            "bm25": 0.0,
+            "rrf": 0.0303
+          }
+        },
+        {
+          "record_id": "kb_company_home_003",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Family Floater",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.059,
+            "bm25": 0.0,
+            "rrf": 0.0296
+          }
+        }
+      ],
+      "query": "Three legs rubí. Three.",
+      "field_updates": {
+        "sum_insured_lakh": 3
+      },
+      "tokens": 2301,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Thank you.",
+      "t": 171.45,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.613,
+        "no_speech_prob": 0,
+        "ms": 276,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "May I have your consent to be contacted by a licensed Nivaran advisor, and could you let me know a convenient day and time for the callback?",
+      "t": 174.59,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 276,
+        "retrieval_ms": 19,
+        "llm_ms": 1017,
+        "tts_ms": 2106,
+        "total_ms": 3419
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_product_ess_003",
+          "title": "Nivaran Essential > Sum insured options",
+          "category": "product",
+          "relevant": false,
+          "scores": {
+            "dense": 0.211,
+            "bm25": 0.0,
+            "rrf": 0.0311
+          }
+        },
+        {
+          "record_id": "kb_company_home_002",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Essential",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.076,
+            "bm25": 0.0,
+            "rrf": 0.0286
+          }
+        },
+        {
+          "record_id": "kb_product_sc_003",
+          "title": "Nivaran Senior Care > Sum insured options",
+          "category": "product",
+          "relevant": false,
+          "scores": {
+            "dense": 0.137,
+            "bm25": 0.0,
+            "rrf": 0.0277
+          }
+        }
+      ],
+      "query": "Three. Thank you.",
+      "field_updates": {},
+      "tokens": 1290,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Yes, you have my consent and you can call me tomorrow's afternoon.",
+      "t": 191.69,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.173,
+        "no_speech_prob": 0,
+        "ms": 330,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Thank you, Utkarsh. We have noted your consent and will have a licensed advisor call you tomorrow afternoon. They will share the indicative premium and answer any questions. Have a wonderful day.",
+      "t": 195.12,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 330,
+        "retrieval_ms": 35,
+        "llm_ms": 1299,
+        "tts_ms": 2090,
+        "total_ms": 3759
+      },
+      "answer_status": "no_question",
+      "action": "submit",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_form_form_001",
+          "title": "Health insurance proposal form > Required details",
+          "category": "form",
+          "relevant": false,
+          "scores": {
+            "dense": 0.186,
+            "bm25": 3.23,
+            "rrf": 0.0323
+          }
+        },
+        {
+          "record_id": "kb_objection_obj_006",
+          "title": "Sales Playbook: Objection Handling (Health Insurance) > Objection: \"I need to think about it\" or \"I need to discuss with my family\"",
+          "category": "objection",
+          "relevant": false,
+          "scores": {
+            "dense": 0.219,
+            "bm25": 2.77,
+            "rrf": 0.032
+          }
+        },
+        {
+          "record_id": "kb_claims_clm_004",
+          "title": "Claims made simple > Grievances",
+          "category": "claims",
+          "relevant": false,
+          "scores": {
+            "dense": 0.159,
+            "bm25": 2.7,
+            "rrf": 0.0308
+          }
+        }
+      ],
+      "query": "Yes, you have my consent and you can call me tomorrow's afternoon.",
+      "field_updates": {
+        "consent_to_contact": true,
+        "callback_time": "tomorrow afternoon"
+      },
+      "tokens": 1475,
+      "reruns": 0,
+      "outcome": "qualified",
+      "error": null
+    }
+  ],
+  "recording": "call.wav"
+}

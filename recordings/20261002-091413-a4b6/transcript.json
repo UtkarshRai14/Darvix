@@ -1,0 +1,1027 @@
+{
+  "call_id": "20261002-091413-a4b6",
+  "profile_id": "health_lead_in",
+  "profile_title": "Health insurance lead qualification",
+  "market": "India",
+  "source": "web",
+  "started_at": "2026-10-02T03:44:13+00:00",
+  "duration_s": 204.8,
+  "end_reason": "submit",
+  "outcome": {
+    "status": "qualified",
+    "reasons": [
+      "all required details captured; no declared conditions"
+    ],
+    "missing": [],
+    "plan_recommendation": [
+      "Essential"
+    ],
+    "label": "Qualified - advisor follow-up"
+  },
+  "fields": {
+    "full_name": "Utkars life",
+    "age": 21,
+    "city": "Sonipat",
+    "members_to_cover": "self",
+    "eldest_member_age": 21,
+    "pre_existing_conditions": "none",
+    "sum_insured_lakh": 5,
+    "annual_budget_inr": null,
+    "existing_cover": null,
+    "consent_to_contact": true,
+    "callback_time": "tomorrow afternoon"
+  },
+  "actions": [
+    {
+      "type": "lead_created",
+      "record_id": "LEA-29111691",
+      "status": "qualified"
+    }
+  ],
+  "crm_summary_id": "CAL-d948e3c4",
+  "crm_summary": "Health insurance lead qualification call (India). Outcome: Qualified - advisor follow-up. Reasons: all required details captured; no declared conditions. Captured - name: Utkars life, age: 21, city: Sonipat, members to cover: self, eldest member's age: 21, pre-existing conditions: none, sum insured: 5, consent to be contacted: yes, callback time: tomorrow afternoon. Suggested plan: Essential. Actions: lead_created.",
+  "flags": [
+    "fallback used: answer_status is answered_from_kb but no record_id from KNOW"
+  ],
+  "conflicts_detected": [],
+  "verified": true,
+  "metrics": {
+    "agent_turns": 13,
+    "grounded_answers": 2,
+    "unavailable_answers": 1,
+    "fallback_turns": 0,
+    "corrective_reruns": 2,
+    "tokens": 33751,
+    "p50_stt_ms": 283,
+    "p95_stt_ms": 319,
+    "p50_retrieval_ms": 28,
+    "p95_retrieval_ms": 44,
+    "p50_llm_ms": 973,
+    "p95_llm_ms": 1271,
+    "p50_tts_ms": 1751,
+    "p95_tts_ms": 2963,
+    "p50_total_ms": 2886,
+    "p95_total_ms": 5242
+  },
+  "turns": [
+    {
+      "role": "agent",
+      "text": "Good morning! This is Ananya, a virtual assistant from Nivaran Health Insurance. This call is recorded for quality and training. You had asked about health insurance on our website. Is this a good time to talk for about three minutes?",
+      "t": 0.0,
+      "kind": "greeting",
+      "timings": {
+        "tts_ms": 0
+      },
+      "answer_status": null,
+      "action": null,
+      "citations": [],
+      "retrieved": [],
+      "query": null,
+      "field_updates": {},
+      "tokens": 0,
+      "reruns": 0,
+      "outcome": null,
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Yes, I am available.",
+      "t": 22.77,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.335,
+        "no_speech_prob": 0,
+        "ms": 435,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "May I have your full name, please?",
+      "t": 24.97,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 435,
+        "retrieval_ms": 335,
+        "llm_ms": 898,
+        "tts_ms": 961,
+        "total_ms": 2630
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_qualification_ess_002",
+          "title": "Nivaran Essential > Eligibility",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.192,
+            "bm25": 3.34,
+            "rrf": 0.0323
+          }
+        },
+        {
+          "record_id": "kb_faq_faqold_005",
+          "title": "FAQs > Where can I get cashless treatment?",
+          "category": "faq",
+          "relevant": false,
+          "scores": {
+            "dense": 0.14,
+            "bm25": 3.53,
+            "rrf": 0.0315
+          }
+        },
+        {
+          "record_id": "kb_claims_clm_001",
+          "title": "Claims made simple > Cashless claims",
+          "category": "claims",
+          "relevant": false,
+          "scores": {
+            "dense": 0.127,
+            "bm25": 2.35,
+            "rrf": 0.0294
+          }
+        }
+      ],
+      "query": "Yes, I am available.",
+      "field_updates": {},
+      "tokens": 2143,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Of course, right.",
+      "t": 30.99,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.661,
+        "no_speech_prob": 0,
+        "ms": 291,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Could you please tell me your full name?",
+      "t": 33.59,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 291,
+        "retrieval_ms": 44,
+        "llm_ms": 778,
+        "tts_ms": 1773,
+        "total_ms": 2886
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_qualification_ess_002",
+          "title": "Nivaran Essential > Eligibility",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.192,
+            "bm25": 3.34,
+            "rrf": 0.0323
+          }
+        },
+        {
+          "record_id": "kb_faq_faqold_005",
+          "title": "FAQs > Where can I get cashless treatment?",
+          "category": "faq",
+          "relevant": false,
+          "scores": {
+            "dense": 0.099,
+            "bm25": 3.53,
+            "rrf": 0.0295
+          }
+        },
+        {
+          "record_id": "kb_claims_clm_001",
+          "title": "Claims made simple > Cashless claims",
+          "category": "claims",
+          "relevant": false,
+          "scores": {
+            "dense": 0.104,
+            "bm25": 2.35,
+            "rrf": 0.029
+          }
+        }
+      ],
+      "query": "Yes, I am available. Of course, right.",
+      "field_updates": {},
+      "tokens": 2142,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Utkars life.",
+      "t": 40.95,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.906,
+        "no_speech_prob": 0,
+        "ms": 294,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Thank you, Utkars life. May I know your age, please?",
+      "t": 45.26,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 294,
+        "retrieval_ms": 28,
+        "llm_ms": 1313,
+        "tts_ms": 2963,
+        "total_ms": 4599
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_qualification_ess_002",
+          "title": "Nivaran Essential > Eligibility",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.129,
+            "bm25": 0.0,
+            "rrf": 0.0313
+          }
+        },
+        {
+          "record_id": "kb_company_home_004",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Senior Care",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.121,
+            "bm25": 0.0,
+            "rrf": 0.0303
+          }
+        },
+        {
+          "record_id": "kb_company_home_001",
+          "title": "Health insurance that stays with you",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.099,
+            "bm25": 0.0,
+            "rrf": 0.0302
+          }
+        }
+      ],
+      "query": "Of course, right. Utkars life.",
+      "field_updates": {
+        "full_name": "Utkars life"
+      },
+      "tokens": 2113,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "21.",
+      "t": 54.39,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.666,
+        "no_speech_prob": 0,
+        "ms": 256,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Which city do you live in?",
+      "t": 56.7,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 256,
+        "retrieval_ms": 20,
+        "llm_ms": 1271,
+        "tts_ms": 1023,
+        "total_ms": 2572
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_company_home_002",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Essential",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.254,
+            "bm25": 0.0,
+            "rrf": 0.0308
+          }
+        },
+        {
+          "record_id": "kb_pricing_prem_002",
+          "title": "Indicative annual premium - Essential, 1 adult",
+          "category": "pricing",
+          "relevant": false,
+          "scores": {
+            "dense": 0.219,
+            "bm25": 1.68,
+            "rrf": 0.0304
+          }
+        },
+        {
+          "record_id": "kb_qualification_ff_002",
+          "title": "Nivaran Family Floater > Who can be covered",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.264,
+            "bm25": 0.0,
+            "rrf": 0.0298
+          }
+        }
+      ],
+      "query": "Utkars life. 21.",
+      "field_updates": {
+        "full_name": "Utkars life",
+        "age": 21
+      },
+      "tokens": 4872,
+      "reruns": 1,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Sorry, but",
+      "t": 62.88,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.674,
+        "no_speech_prob": 0,
+        "ms": 297,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "I’m sorry, could you please tell me which city you live in?",
+      "t": 64.76,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 297,
+        "retrieval_ms": 25,
+        "llm_ms": 585,
+        "tts_ms": 1268,
+        "total_ms": 2176
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_pricing_prem_002",
+          "title": "Indicative annual premium - Essential, 1 adult",
+          "category": "pricing",
+          "relevant": false,
+          "scores": {
+            "dense": 0.137,
+            "bm25": 1.68,
+            "rrf": 0.0311
+          }
+        },
+        {
+          "record_id": "kb_qualification_ess_002",
+          "title": "Nivaran Essential > Eligibility",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.135,
+            "bm25": 0.0,
+            "rrf": 0.0276
+          }
+        },
+        {
+          "record_id": "kb_company_home_004",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Senior Care",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.116,
+            "bm25": 0.0,
+            "rrf": 0.0272
+          }
+        }
+      ],
+      "query": "21. Sorry, but",
+      "field_updates": {},
+      "tokens": 2374,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Sonipat.",
+      "t": 71.38,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.593,
+        "no_speech_prob": 0,
+        "ms": 267,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Great, thank you. Who would you like to cover under the plan – yourself, your spouse, children, or parents?",
+      "t": 85.87,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 267,
+        "retrieval_ms": 25,
+        "llm_ms": 956,
+        "tts_ms": 1751,
+        "total_ms": 14754
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_qualification_ess_002",
+          "title": "Nivaran Essential > Eligibility",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.152,
+            "bm25": 0.0,
+            "rrf": 0.0306
+          }
+        },
+        {
+          "record_id": "kb_product_ff_007",
+          "title": "Nivaran Family Floater > Optional add-on: Critical Illness Rider",
+          "category": "product",
+          "relevant": false,
+          "scores": {
+            "dense": 0.198,
+            "bm25": 0.0,
+            "rrf": 0.0289
+          }
+        },
+        {
+          "record_id": "kb_policy_ff_006",
+          "title": "Nivaran Family Floater > Waiting periods",
+          "category": "policy",
+          "relevant": false,
+          "scores": {
+            "dense": 0.146,
+            "bm25": 0.0,
+            "rrf": 0.0285
+          }
+        }
+      ],
+      "query": "Sorry, but Sonipat.",
+      "field_updates": {
+        "city": "Sonipat"
+      },
+      "tokens": 2315,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Only myself.",
+      "t": 97.75,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.419,
+        "no_speech_prob": 0,
+        "ms": 319,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Do you have any pre‑existing medical conditions, or should I note “none”?",
+      "t": 99.75,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 319,
+        "retrieval_ms": 44,
+        "llm_ms": 795,
+        "tts_ms": 1160,
+        "total_ms": 2319
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_company_home_003",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Family Floater",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.198,
+            "bm25": 0.0,
+            "rrf": 0.0313
+          }
+        },
+        {
+          "record_id": "kb_qualification_ess_002",
+          "title": "Nivaran Essential > Eligibility",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.22,
+            "bm25": 0.0,
+            "rrf": 0.0311
+          }
+        },
+        {
+          "record_id": "kb_product_ff_001",
+          "title": "Nivaran Family Floater",
+          "category": "product",
+          "relevant": false,
+          "scores": {
+            "dense": 0.247,
+            "bm25": 0.0,
+            "rrf": 0.0305
+          }
+        }
+      ],
+      "query": "Sonipat. Only myself.",
+      "field_updates": {
+        "full_name": "Utkars life",
+        "age": 21,
+        "city": "Sonipat"
+      },
+      "tokens": 2231,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Note 9.",
+      "t": 107.94,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.546,
+        "no_speech_prob": 0,
+        "ms": 260,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Could you please confirm if you have any pre‑existing medical conditions, or should I record “none”?",
+      "t": 111.6,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 260,
+        "retrieval_ms": 28,
+        "llm_ms": 978,
+        "tts_ms": 2660,
+        "total_ms": 3927
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_product_ess_001",
+          "title": "Nivaran Essential",
+          "category": "product",
+          "relevant": false,
+          "scores": {
+            "dense": 0.16,
+            "bm25": 0.0,
+            "rrf": 0.0305
+          }
+        },
+        {
+          "record_id": "kb_company_home_005",
+          "title": "Health insurance that stays with you > Why choose Nivaran?",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.108,
+            "bm25": 0.0,
+            "rrf": 0.0299
+          }
+        },
+        {
+          "record_id": "kb_qualification_ess_002",
+          "title": "Nivaran Essential > Eligibility",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.115,
+            "bm25": 0.0,
+            "rrf": 0.0299
+          }
+        }
+      ],
+      "query": "Only myself. Note 9.",
+      "field_updates": {},
+      "tokens": 2288,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "None.",
+      "t": 120.18,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.49,
+        "no_speech_prob": 0,
+        "ms": 257,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "I'm sorry, I don't have verified information on that. I can ask a licensed advisor to call you back with the exact details.",
+      "t": 122.7,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 257,
+        "retrieval_ms": 22,
+        "llm_ms": 1263,
+        "tts_ms": 1225,
+        "total_ms": 2773
+      },
+      "answer_status": "info_unavailable",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_product_ff_001",
+          "title": "Nivaran Family Floater",
+          "category": "product",
+          "relevant": false,
+          "scores": {
+            "dense": 0.165,
+            "bm25": 0.0,
+            "rrf": 0.0286
+          }
+        },
+        {
+          "record_id": "kb_company_home_005",
+          "title": "Health insurance that stays with you > Why choose Nivaran?",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.135,
+            "bm25": 0.0,
+            "rrf": 0.0285
+          }
+        },
+        {
+          "record_id": "kb_qualification_ess_002",
+          "title": "Nivaran Essential > Eligibility",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.139,
+            "bm25": 0.0,
+            "rrf": 0.0284
+          }
+        }
+      ],
+      "query": "Note 9. None.",
+      "field_updates": {},
+      "tokens": 4665,
+      "reruns": 1,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Okay.",
+      "t": 137.48,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.365,
+        "no_speech_prob": 0,
+        "ms": 315,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "What sum insured would you like, in lakh rupees?",
+      "t": 139.67,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 315,
+        "retrieval_ms": 32,
+        "llm_ms": 753,
+        "tts_ms": 1401,
+        "total_ms": 2501
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_company_home_005",
+          "title": "Health insurance that stays with you > Why choose Nivaran?",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.173,
+            "bm25": 0.0,
+            "rrf": 0.0299
+          }
+        },
+        {
+          "record_id": "kb_qualification_ess_002",
+          "title": "Nivaran Essential > Eligibility",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.182,
+            "bm25": 0.0,
+            "rrf": 0.0299
+          }
+        },
+        {
+          "record_id": "kb_qualification_ff_002",
+          "title": "Nivaran Family Floater > Who can be covered",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.137,
+            "bm25": 0.0,
+            "rrf": 0.0278
+          }
+        }
+      ],
+      "query": "None. Okay.",
+      "field_updates": {
+        "members_to_cover": "self",
+        "eldest_member_age": 21,
+        "pre_existing_conditions": "none"
+      },
+      "tokens": 2324,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Five lakh rupees.",
+      "t": 147.64,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.61,
+        "no_speech_prob": 0,
+        "ms": 283,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "For a five lakh rupees sum insured, the indicative annual premium for an Essential plan is about five thousand six hundred rupees, excluding GST. Do you consent to be contacted by a licensed advisor, and what day and time would be best for a callback?",
+      "t": 151.14,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 283,
+        "retrieval_ms": 29,
+        "llm_ms": 1002,
+        "tts_ms": 2474,
+        "total_ms": 3789
+      },
+      "answer_status": "answered_from_kb",
+      "action": "continue",
+      "citations": [
+        {
+          "record_id": "kb_product_ess_003",
+          "title": "Nivaran Essential > Sum insured options",
+          "citation": "data/raw/health_in/website/essential.html > Sum insured options (v1.0)",
+          "category": "product"
+        },
+        {
+          "record_id": "kb_pricing_prem_001",
+          "title": "Indicative annual premium - Essential, 1 adult",
+          "citation": "data/raw/health_in/tables/indicative-premium-chart.csv > Indicative annual premium - Essential, 1 adult (v1.0)",
+          "category": "pricing"
+        }
+      ],
+      "retrieved": [
+        {
+          "record_id": "kb_product_ess_003",
+          "title": "Nivaran Essential > Sum insured options",
+          "category": "product",
+          "relevant": false,
+          "scores": {
+            "dense": 0.343,
+            "bm25": 2.14,
+            "rrf": 0.0328
+          }
+        },
+        {
+          "record_id": "kb_pricing_prem_001",
+          "title": "Indicative annual premium - Essential, 1 adult",
+          "category": "pricing",
+          "relevant": false,
+          "scores": {
+            "dense": 0.256,
+            "bm25": 1.74,
+            "rrf": 0.0308
+          }
+        },
+        {
+          "record_id": "kb_product_ff_003",
+          "title": "Nivaran Family Floater > Sum insured options",
+          "category": "product",
+          "relevant": false,
+          "scores": {
+            "dense": 0.24,
+            "bm25": 2.01,
+            "rrf": 0.0306
+          }
+        }
+      ],
+      "query": "Okay. Five lakh rupees.",
+      "field_updates": {
+        "sum_insured_lakh": 5
+      },
+      "tokens": 2460,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Maybe tomorrow afternoon.",
+      "t": 171.62,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.488,
+        "no_speech_prob": 0,
+        "ms": 277,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "May I have your consent to be contacted by a licensed advisor, and confirm tomorrow afternoon as the preferred callback time?",
+      "t": 176.58,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 277,
+        "retrieval_ms": 40,
+        "llm_ms": 973,
+        "tts_ms": 3950,
+        "total_ms": 5242
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_product_ess_003",
+          "title": "Nivaran Essential > Sum insured options",
+          "category": "product",
+          "relevant": false,
+          "scores": {
+            "dense": 0.319,
+            "bm25": 2.14,
+            "rrf": 0.0328
+          }
+        },
+        {
+          "record_id": "kb_pricing_prem_001",
+          "title": "Indicative annual premium - Essential, 1 adult",
+          "category": "pricing",
+          "relevant": false,
+          "scores": {
+            "dense": 0.263,
+            "bm25": 1.74,
+            "rrf": 0.0308
+          }
+        },
+        {
+          "record_id": "kb_product_ff_003",
+          "title": "Nivaran Family Floater > Sum insured options",
+          "category": "product",
+          "relevant": false,
+          "scores": {
+            "dense": 0.241,
+            "bm25": 2.01,
+            "rrf": 0.0303
+          }
+        }
+      ],
+      "query": "Five lakh rupees. Maybe tomorrow afternoon.",
+      "field_updates": {
+        "callback_time": "tomorrow afternoon"
+      },
+      "tokens": 1431,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Yes.",
+      "t": 187.3,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.377,
+        "no_speech_prob": 0,
+        "ms": 266,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Thank you. I have noted your consent and the callback for tomorrow afternoon. A licensed advisor will call you then to discuss the Essential plan further. Have a great day!",
+      "t": 190.72,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 266,
+        "retrieval_ms": 21,
+        "llm_ms": 1085,
+        "tts_ms": 2306,
+        "total_ms": 3684
+      },
+      "answer_status": "answered_from_kb",
+      "action": "submit",
+      "citations": [
+        {
+          "record_id": "kb_policy_ess_005",
+          "title": "Nivaran Essential > Waiting periods",
+          "citation": "data/raw/health_in/website/essential.html > Waiting periods (v1.0)",
+          "category": "policy"
+        }
+      ],
+      "retrieved": [
+        {
+          "record_id": "kb_policy_ess_005",
+          "title": "Nivaran Essential > Waiting periods",
+          "category": "policy",
+          "relevant": false,
+          "scores": {
+            "dense": 0.202,
+            "bm25": 0.0,
+            "rrf": 0.0302
+          }
+        },
+        {
+          "record_id": "kb_policy_ff_006",
+          "title": "Nivaran Family Floater > Waiting periods",
+          "category": "policy",
+          "relevant": false,
+          "scores": {
+            "dense": 0.213,
+            "bm25": 0.0,
+            "rrf": 0.0293
+          }
+        },
+        {
+          "record_id": "kb_qualification_ess_002",
+          "title": "Nivaran Essential > Eligibility",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.148,
+            "bm25": 0.0,
+            "rrf": 0.0288
+          }
+        }
+      ],
+      "query": "Maybe tomorrow afternoon. Yes.",
+      "field_updates": {
+        "consent_to_contact": true,
+        "callback_time": "tomorrow afternoon"
+      },
+      "tokens": 2393,
+      "reruns": 0,
+      "outcome": "qualified",
+      "error": null
+    }
+  ],
+  "recording": "call.wav"
+}

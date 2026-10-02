@@ -1,0 +1,229 @@
+{
+  "call_id": "20261002-104037-e537",
+  "profile_id": "health_lead_in",
+  "profile_title": "Health insurance lead qualification",
+  "market": "India",
+  "source": "web",
+  "started_at": "2026-10-02T05:10:37+00:00",
+  "duration_s": 36.7,
+  "end_reason": "customer_hung_up",
+  "outcome": {
+    "status": "incomplete",
+    "reasons": [
+      "missing: age, city, members_to_cover, eldest_member_age, pre_existing_conditions, sum_insured_lakh, consent_to_contact, callback_time"
+    ],
+    "missing": [
+      "age",
+      "city",
+      "members_to_cover",
+      "eldest_member_age",
+      "pre_existing_conditions",
+      "sum_insured_lakh",
+      "consent_to_contact",
+      "callback_time"
+    ],
+    "plan_recommendation": [
+      "Essential"
+    ],
+    "label": "Incomplete"
+  },
+  "fields": {
+    "full_name": "Udkars",
+    "age": null,
+    "city": null,
+    "members_to_cover": null,
+    "eldest_member_age": null,
+    "pre_existing_conditions": null,
+    "sum_insured_lakh": null,
+    "annual_budget_inr": null,
+    "existing_cover": null,
+    "consent_to_contact": null,
+    "callback_time": null
+  },
+  "actions": [],
+  "crm_summary_id": "CAL-63c8c1fa",
+  "crm_summary": "Health insurance lead qualification call (India). Outcome: Incomplete. Reasons: missing: age, city, members_to_cover, eldest_member_age, pre_existing_conditions, sum_insured_lakh, consent_to_contact, callback_time. Captured - name: Udkars. Suggested plan: Essential. Actions: none.",
+  "flags": [],
+  "conflicts_detected": [],
+  "verified": true,
+  "metrics": {
+    "agent_turns": 2,
+    "grounded_answers": 0,
+    "unavailable_answers": 0,
+    "fallback_turns": 0,
+    "corrective_reruns": 0,
+    "tokens": 3154,
+    "p50_stt_ms": 256,
+    "p95_stt_ms": 313,
+    "p50_retrieval_ms": 17,
+    "p95_retrieval_ms": 26,
+    "p50_llm_ms": 885,
+    "p95_llm_ms": 921,
+    "p50_tts_ms": 0,
+    "p95_tts_ms": 2154,
+    "p50_total_ms": 1217,
+    "p95_total_ms": 3358
+  },
+  "turns": [
+    {
+      "role": "agent",
+      "text": "Good morning! This is Ananya, a virtual assistant from Nivaran Health Insurance. This call is recorded for quality and training. You had asked about health insurance on our website. Is this a good time to talk for about three minutes?",
+      "t": 0.0,
+      "kind": "greeting",
+      "timings": {
+        "tts_ms": 0
+      },
+      "answer_status": null,
+      "action": null,
+      "citations": [],
+      "retrieved": [],
+      "query": null,
+      "field_updates": {},
+      "tokens": 0,
+      "reruns": 0,
+      "outcome": null,
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Yes, go ahead.",
+      "t": 22.33,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.349,
+        "no_speech_prob": 0,
+        "ms": 313,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "May I have your full name, please?",
+      "t": 23.24,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 313,
+        "retrieval_ms": 17,
+        "llm_ms": 885,
+        "tts_ms": 0,
+        "total_ms": 1217
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_company_home_004",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Senior Care",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.154,
+            "bm25": 0.0,
+            "rrf": 0.032
+          }
+        },
+        {
+          "record_id": "kb_company_home_002",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Essential",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.118,
+            "bm25": 0.0,
+            "rrf": 0.032
+          }
+        },
+        {
+          "record_id": "kb_company_home_001",
+          "title": "Health insurance that stays with you",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.08,
+            "bm25": 0.0,
+            "rrf": 0.0305
+          }
+        }
+      ],
+      "query": "Yes, go ahead.",
+      "field_updates": {},
+      "tokens": 1047,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Udkars!",
+      "t": 29.36,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.899,
+        "no_speech_prob": 0,
+        "ms": 256,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Thank you, Udkars. Could you tell me your age, please?",
+      "t": 32.46,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 256,
+        "retrieval_ms": 26,
+        "llm_ms": 921,
+        "tts_ms": 2154,
+        "total_ms": 3358
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_product_ess_003",
+          "title": "Nivaran Essential > Sum insured options",
+          "category": "product",
+          "relevant": false,
+          "scores": {
+            "dense": 0.14,
+            "bm25": 0.0,
+            "rrf": 0.0303
+          }
+        },
+        {
+          "record_id": "kb_qualification_ess_002",
+          "title": "Nivaran Essential > Eligibility",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.128,
+            "bm25": 0.0,
+            "rrf": 0.0303
+          }
+        },
+        {
+          "record_id": "kb_company_home_001",
+          "title": "Health insurance that stays with you",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.109,
+            "bm25": 0.0,
+            "rrf": 0.0299
+          }
+        }
+      ],
+      "query": "Yes, go ahead. Udkars!",
+      "field_updates": {
+        "full_name": "Udkars"
+      },
+      "tokens": 2107,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    }
+  ],
+  "recording": "call.wav"
+}

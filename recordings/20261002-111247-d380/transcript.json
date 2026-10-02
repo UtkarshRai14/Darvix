@@ -1,0 +1,76 @@
+{
+  "call_id": "20261002-111247-d380",
+  "profile_id": "life_premium_ph",
+  "profile_title": "Life insurance premium reminder (bancassurance)",
+  "market": "Philippines",
+  "source": "web",
+  "started_at": "2026-10-02T05:42:47+00:00",
+  "duration_s": 22.8,
+  "end_reason": "customer_hung_up",
+  "outcome": {
+    "status": "unverified",
+    "reasons": [
+      "verification attempts: 0"
+    ],
+    "missing": [
+      "verification_last4"
+    ],
+    "label": "Identity not verified"
+  },
+  "fields": {
+    "is_policyholder": null,
+    "verification_last4": null,
+    "payment_commitment": null,
+    "promised_payment_date": null,
+    "payment_channel": null,
+    "reason_for_delay": null,
+    "bank_referral_consent": null,
+    "callback_time": null
+  },
+  "actions": [],
+  "crm_summary_id": "CAL-b30668ca",
+  "crm_summary": "Life insurance premium reminder (bancassurance) call (Philippines). Outcome: Identity not verified. Reasons: verification attempts: 0. Captured - nothing. Actions: none.",
+  "flags": [],
+  "conflicts_detected": [],
+  "verified": null,
+  "metrics": {
+    "agent_turns": 0,
+    "grounded_answers": 0,
+    "unavailable_answers": 0,
+    "fallback_turns": 0,
+    "corrective_reruns": 0,
+    "tokens": 0,
+    "p50_stt_ms": null,
+    "p95_stt_ms": null,
+    "p50_retrieval_ms": null,
+    "p95_retrieval_ms": null,
+    "p50_llm_ms": null,
+    "p95_llm_ms": null,
+    "p50_tts_ms": null,
+    "p95_tts_ms": null,
+    "p50_total_ms": null,
+    "p95_total_ms": null
+  },
+  "turns": [
+    {
+      "role": "agent",
+      "text": "Magandang hapon po! Si Bea po ito, virtual assistant ng Liwanag Life, ang insurance partner ng Sinag Bank. Naka-record po ang tawag na ito para sa quality at training. Si Mr. Mark Dela Cruz po ba ang kausap ko?",
+      "t": 4.78,
+      "kind": "greeting",
+      "timings": {
+        "tts_ms": 4776
+      },
+      "answer_status": null,
+      "action": null,
+      "citations": [],
+      "retrieved": [],
+      "query": null,
+      "field_updates": {},
+      "tokens": 0,
+      "reruns": 0,
+      "outcome": null,
+      "error": null
+    }
+  ],
+  "recording": "call.wav"
+}

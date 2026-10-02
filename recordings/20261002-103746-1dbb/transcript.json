@@ -1,0 +1,445 @@
+{
+  "call_id": "20261002-103746-1dbb",
+  "profile_id": "health_lead_in",
+  "profile_title": "Health insurance lead qualification",
+  "market": "India",
+  "source": "web",
+  "started_at": "2026-10-02T05:07:46+00:00",
+  "duration_s": 79.8,
+  "end_reason": "customer_hung_up",
+  "outcome": {
+    "status": "incomplete",
+    "reasons": [
+      "missing: members_to_cover, eldest_member_age, pre_existing_conditions, sum_insured_lakh, consent_to_contact, callback_time"
+    ],
+    "missing": [
+      "members_to_cover",
+      "eldest_member_age",
+      "pre_existing_conditions",
+      "sum_insured_lakh",
+      "consent_to_contact",
+      "callback_time"
+    ],
+    "plan_recommendation": [
+      "Essential"
+    ],
+    "label": "Incomplete"
+  },
+  "fields": {
+    "full_name": "Utkarz Raya",
+    "age": 21,
+    "city": "Valancy",
+    "members_to_cover": null,
+    "eldest_member_age": null,
+    "pre_existing_conditions": null,
+    "sum_insured_lakh": null,
+    "annual_budget_inr": null,
+    "existing_cover": null,
+    "consent_to_contact": null,
+    "callback_time": null
+  },
+  "actions": [],
+  "crm_summary_id": "CAL-549a7d51",
+  "crm_summary": "Health insurance lead qualification call (India). Outcome: Incomplete. Reasons: missing: members_to_cover, eldest_member_age, pre_existing_conditions, sum_insured_lakh, consent_to_contact, callback_time. Captured - name: Utkarz Raya, age: 21, city: Valancy. Suggested plan: Essential. Actions: none.",
+  "flags": [
+    "fallback used: answer_status is answered_from_kb but no record_id from KNOW"
+  ],
+  "conflicts_detected": [],
+  "verified": true,
+  "metrics": {
+    "agent_turns": 5,
+    "grounded_answers": 0,
+    "unavailable_answers": 1,
+    "fallback_turns": 0,
+    "corrective_reruns": 1,
+    "tokens": 13808,
+    "p50_stt_ms": 375,
+    "p95_stt_ms": 733,
+    "p50_retrieval_ms": 23,
+    "p95_retrieval_ms": 44,
+    "p50_llm_ms": 802,
+    "p95_llm_ms": 1228,
+    "p50_tts_ms": 1526,
+    "p95_tts_ms": 2463,
+    "p50_total_ms": 2679,
+    "p95_total_ms": 3695
+  },
+  "turns": [
+    {
+      "role": "agent",
+      "text": "Good morning! This is Ananya, a virtual assistant from Nivaran Health Insurance. This call is recorded for quality and training. You had asked about health insurance on our website. Is this a good time to talk for about three minutes?",
+      "t": 0.0,
+      "kind": "greeting",
+      "timings": {
+        "tts_ms": 0
+      },
+      "answer_status": null,
+      "action": null,
+      "citations": [],
+      "retrieved": [],
+      "query": null,
+      "field_updates": {},
+      "tokens": 0,
+      "reruns": 0,
+      "outcome": null,
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Yes, go ahead.",
+      "t": 22.68,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.188,
+        "no_speech_prob": 0,
+        "ms": 733,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "May I have your full name, please?",
+      "t": 23.6,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 733,
+        "retrieval_ms": 44,
+        "llm_ms": 872,
+        "tts_ms": 0,
+        "total_ms": 1650
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_company_home_004",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Senior Care",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.154,
+            "bm25": 0.0,
+            "rrf": 0.032
+          }
+        },
+        {
+          "record_id": "kb_company_home_002",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Essential",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.118,
+            "bm25": 0.0,
+            "rrf": 0.032
+          }
+        },
+        {
+          "record_id": "kb_company_home_001",
+          "title": "Health insurance that stays with you",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.08,
+            "bm25": 0.0,
+            "rrf": 0.0305
+          }
+        }
+      ],
+      "query": "Yes, go ahead.",
+      "field_updates": {},
+      "tokens": 2071,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Utkarz Raya",
+      "t": 30.31,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.615,
+        "no_speech_prob": 0,
+        "ms": 400,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Thank you, Utkarz. Could you tell me your age, please?",
+      "t": 33.61,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 400,
+        "retrieval_ms": 34,
+        "llm_ms": 797,
+        "tts_ms": 2463,
+        "total_ms": 3695
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_company_home_002",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Essential",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.102,
+            "bm25": 0.0,
+            "rrf": 0.0318
+          }
+        },
+        {
+          "record_id": "kb_company_home_001",
+          "title": "Health insurance that stays with you",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.088,
+            "bm25": 0.0,
+            "rrf": 0.0311
+          }
+        },
+        {
+          "record_id": "kb_company_home_004",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Senior Care",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.098,
+            "bm25": 0.0,
+            "rrf": 0.0306
+          }
+        }
+      ],
+      "query": "Yes, go ahead. Utkarz Raya",
+      "field_updates": {
+        "full_name": "Utkarz Raya"
+      },
+      "tokens": 2066,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "21 years.",
+      "t": 43.34,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.644,
+        "no_speech_prob": 0,
+        "ms": 330,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Great, thank you. May I know which city you live in?",
+      "t": 45.69,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 330,
+        "retrieval_ms": 20,
+        "llm_ms": 802,
+        "tts_ms": 1526,
+        "total_ms": 2679
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_qualification_uw_003",
+          "title": "Retail Health Underwriting Guidelines > Maximum sum insured by age of eldest member",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.365,
+            "bm25": 1.79,
+            "rrf": 0.032
+          }
+        },
+        {
+          "record_id": "kb_pricing_prem_002",
+          "title": "Indicative annual premium - Essential, 1 adult",
+          "category": "pricing",
+          "relevant": false,
+          "scores": {
+            "dense": 0.315,
+            "bm25": 3.37,
+            "rrf": 0.0313
+          }
+        },
+        {
+          "record_id": "kb_pricing_prem_006",
+          "title": "Indicative annual premium - Senior Care, 1 adult",
+          "category": "pricing",
+          "relevant": false,
+          "scores": {
+            "dense": 0.33,
+            "bm25": 1.71,
+            "rrf": 0.031
+          }
+        }
+      ],
+      "query": "Utkarz Raya 21 years.",
+      "field_updates": {
+        "full_name": "Utkarz Raya",
+        "age": 21
+      },
+      "tokens": 2442,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Valancy.",
+      "t": 53.84,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.849,
+        "no_speech_prob": 0,
+        "ms": 375,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "I'm sorry, I don't have verified information on that. I can ask a licensed advisor to call you back with the exact details.",
+      "t": 55.09,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 375,
+        "retrieval_ms": 20,
+        "llm_ms": 1228,
+        "tts_ms": 0,
+        "total_ms": 1625
+      },
+      "answer_status": "info_unavailable",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_pricing_prem_002",
+          "title": "Indicative annual premium - Essential, 1 adult",
+          "category": "pricing",
+          "relevant": false,
+          "scores": {
+            "dense": 0.37,
+            "bm25": 3.37,
+            "rrf": 0.0311
+          }
+        },
+        {
+          "record_id": "kb_qualification_ff_002",
+          "title": "Nivaran Family Floater > Who can be covered",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.409,
+            "bm25": 1.51,
+            "rrf": 0.0306
+          }
+        },
+        {
+          "record_id": "kb_qualification_uw_003",
+          "title": "Retail Health Underwriting Guidelines > Maximum sum insured by age of eldest member",
+          "category": "qualification",
+          "relevant": false,
+          "scores": {
+            "dense": 0.37,
+            "bm25": 1.79,
+            "rrf": 0.0306
+          }
+        }
+      ],
+      "query": "21 years. Valancy.",
+      "field_updates": {
+        "city": "Valancy"
+      },
+      "tokens": 4993,
+      "reruns": 1,
+      "outcome": "incomplete",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Okay.",
+      "t": 69.73,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.292,
+        "no_speech_prob": 0,
+        "ms": 308,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Sure, Utkarz. Who would you like to cover? For example, yourself, spouse, children, or parents?",
+      "t": 72.16,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 308,
+        "retrieval_ms": 23,
+        "llm_ms": 680,
+        "tts_ms": 1728,
+        "total_ms": 2739
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_product_ess_001",
+          "title": "Nivaran Essential",
+          "category": "product",
+          "relevant": false,
+          "scores": {
+            "dense": 0.147,
+            "bm25": 0.0,
+            "rrf": 0.0299
+          }
+        },
+        {
+          "record_id": "kb_company_home_005",
+          "title": "Health insurance that stays with you > Why choose Nivaran?",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.136,
+            "bm25": 0.0,
+            "rrf": 0.0295
+          }
+        },
+        {
+          "record_id": "kb_company_home_002",
+          "title": "Health insurance that stays with you > Our health plans > Nivaran Essential",
+          "category": "company",
+          "relevant": false,
+          "scores": {
+            "dense": 0.125,
+            "bm25": 0.0,
+            "rrf": 0.0295
+          }
+        }
+      ],
+      "query": "Valancy. Okay.",
+      "field_updates": {
+        "full_name": "Utkarz Raya",
+        "age": 21,
+        "city": "Valancy"
+      },
+      "tokens": 2236,
+      "reruns": 0,
+      "outcome": "incomplete",
+      "error": null
+    }
+  ],
+  "recording": "call.wav"
+}

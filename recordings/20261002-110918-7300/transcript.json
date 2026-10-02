@@ -1,0 +1,156 @@
+{
+  "call_id": "20261002-110918-7300",
+  "profile_id": "multifinance_id",
+  "profile_title": "Pengingat angsuran pembiayaan motor",
+  "market": "Indonesia",
+  "source": "web",
+  "started_at": "2026-10-02T05:39:18+00:00",
+  "duration_s": 57.3,
+  "end_reason": "customer_hung_up",
+  "outcome": {
+    "status": "unverified",
+    "reasons": [
+      "verification attempts: 0"
+    ],
+    "missing": [
+      "verification_last4"
+    ],
+    "label": "Identity not verified"
+  },
+  "fields": {
+    "is_policyholder": null,
+    "verification_last4": null,
+    "payment_commitment": null,
+    "promised_payment_date": null,
+    "payment_channel": null,
+    "reason_for_delay": null,
+    "callback_time": null
+  },
+  "actions": [],
+  "crm_summary_id": "CAL-adaf087d",
+  "crm_summary": "Pengingat angsuran pembiayaan motor call (Indonesia). Outcome: Identity not verified. Reasons: verification attempts: 0. Captured - nothing. Actions: none.",
+  "flags": [],
+  "conflicts_detected": [],
+  "verified": null,
+  "metrics": {
+    "agent_turns": 1,
+    "grounded_answers": 0,
+    "unavailable_answers": 0,
+    "fallback_turns": 0,
+    "corrective_reruns": 0,
+    "tokens": 2424,
+    "p50_stt_ms": 747,
+    "p95_stt_ms": 747,
+    "p50_retrieval_ms": 484,
+    "p95_retrieval_ms": 484,
+    "p50_llm_ms": 918,
+    "p95_llm_ms": 918,
+    "p50_tts_ms": 2917,
+    "p95_tts_ms": 2917,
+    "p50_total_ms": 5071,
+    "p95_total_ms": 5071
+  },
+  "turns": [
+    {
+      "role": "agent",
+      "text": "Selamat siang. Saya Nadia, asisten virtual dari Arunika Multifinance. Panggilan ini direkam untuk menjaga kualitas layanan. Apakah saya berbicara dengan Bapak Budi Santoso?",
+      "t": 6.96,
+      "kind": "greeting",
+      "timings": {
+        "tts_ms": 6952
+      },
+      "answer_status": null,
+      "action": null,
+      "citations": [],
+      "retrieved": [],
+      "query": null,
+      "field_updates": {},
+      "tokens": 0,
+      "reruns": 0,
+      "outcome": null,
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "I'm not gonna be a good one of the kids.",
+      "t": 35.4,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.478,
+        "no_speech_prob": 0,
+        "ms": 747,
+        "model": "whisper-large-v3-turbo"
+      }
+    },
+    {
+      "role": "agent",
+      "text": "Maaf, saya belum yakin dengan identitas Bapak. Apakah saya sedang berbicara dengan Bapak Budi Santoso?",
+      "t": 39.72,
+      "kind": "answer",
+      "timings": {
+        "stt_ms": 747,
+        "retrieval_ms": 484,
+        "llm_ms": 918,
+        "tts_ms": 2917,
+        "total_ms": 5071
+      },
+      "answer_status": "no_question",
+      "action": "continue",
+      "citations": [],
+      "retrieved": [
+        {
+          "record_id": "kb_policy_ang_003",
+          "title": "Ketentuan Angsuran, Jatuh Tempo dan Denda - Pembiayaan Motor Arunika > Denda keterlambatan",
+          "category": "policy",
+          "relevant": false,
+          "scores": {
+            "dense": 0.075,
+            "bm25": 0.0,
+            "rrf": 0.032
+          }
+        },
+        {
+          "record_id": "kb_policy_ang_006",
+          "title": "Ketentuan Angsuran, Jatuh Tempo dan Denda - Pembiayaan Motor Arunika > Keringanan dan restrukturisasi",
+          "category": "policy",
+          "relevant": false,
+          "scores": {
+            "dense": 0.052,
+            "bm25": 0.0,
+            "rrf": 0.0308
+          }
+        },
+        {
+          "record_id": "kb_policy_ang_004",
+          "title": "Ketentuan Angsuran, Jatuh Tempo dan Denda - Pembiayaan Motor Arunika > Janji bayar",
+          "category": "policy",
+          "relevant": false,
+          "scores": {
+            "dense": -0.018,
+            "bm25": 0.0,
+            "rrf": 0.0297
+          }
+        }
+      ],
+      "query": "I'm not gonna be a good one of the kids.",
+      "field_updates": {},
+      "tokens": 2424,
+      "reruns": 0,
+      "outcome": "unverified",
+      "error": null
+    },
+    {
+      "role": "customer",
+      "text": "Terima kasih.",
+      "t": 51.55,
+      "ignored": false,
+      "asr": {
+        "avg_logprob": -0.748,
+        "no_speech_prob": 0,
+        "ms": 322,
+        "model": "whisper-large-v3-turbo"
+      }
+    }
+  ],
+  "recording": "call.wav"
+}

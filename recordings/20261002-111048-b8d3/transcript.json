@@ -1,0 +1,90 @@
+{
+  "call_id": "20261002-111048-b8d3",
+  "profile_id": "health_lead_in",
+  "profile_title": "Health insurance lead qualification",
+  "market": "India",
+  "source": "web",
+  "started_at": "2026-10-02T05:40:48+00:00",
+  "duration_s": 1.9,
+  "end_reason": "customer_hung_up",
+  "outcome": {
+    "status": "incomplete",
+    "reasons": [
+      "missing: full_name, age, city, members_to_cover, eldest_member_age, pre_existing_conditions, sum_insured_lakh, consent_to_contact, callback_time"
+    ],
+    "missing": [
+      "full_name",
+      "age",
+      "city",
+      "members_to_cover",
+      "eldest_member_age",
+      "pre_existing_conditions",
+      "sum_insured_lakh",
+      "consent_to_contact",
+      "callback_time"
+    ],
+    "plan_recommendation": [
+      "Essential"
+    ],
+    "label": "Incomplete"
+  },
+  "fields": {
+    "full_name": null,
+    "age": null,
+    "city": null,
+    "members_to_cover": null,
+    "eldest_member_age": null,
+    "pre_existing_conditions": null,
+    "sum_insured_lakh": null,
+    "annual_budget_inr": null,
+    "existing_cover": null,
+    "consent_to_contact": null,
+    "callback_time": null
+  },
+  "actions": [],
+  "crm_summary_id": "CAL-62f9dbb7",
+  "crm_summary": "Health insurance lead qualification call (India). Outcome: Incomplete. Reasons: missing: full_name, age, city, members_to_cover, eldest_member_age, pre_existing_conditions, sum_insured_lakh, consent_to_contact, callback_time. Captured - nothing. Suggested plan: Essential. Actions: none.",
+  "flags": [],
+  "conflicts_detected": [],
+  "verified": true,
+  "metrics": {
+    "agent_turns": 0,
+    "grounded_answers": 0,
+    "unavailable_answers": 0,
+    "fallback_turns": 0,
+    "corrective_reruns": 0,
+    "tokens": 0,
+    "p50_stt_ms": null,
+    "p95_stt_ms": null,
+    "p50_retrieval_ms": null,
+    "p95_retrieval_ms": null,
+    "p50_llm_ms": null,
+    "p95_llm_ms": null,
+    "p50_tts_ms": null,
+    "p95_tts_ms": null,
+    "p50_total_ms": null,
+    "p95_total_ms": null
+  },
+  "turns": [
+    {
+      "role": "agent",
+      "text": "Good morning! This is Ananya, a virtual assistant from Nivaran Health Insurance. This call is recorded for quality and training. You had asked about health insurance on our website. Is this a good time to talk for about three minutes?",
+      "t": 0.0,
+      "kind": "greeting",
+      "timings": {
+        "tts_ms": 0
+      },
+      "answer_status": null,
+      "action": null,
+      "citations": [],
+      "retrieved": [],
+      "query": null,
+      "field_updates": {},
+      "tokens": 0,
+      "reruns": 0,
+      "outcome": null,
+      "error": null
+    }
+  ],
+  "recording": "call.wav"
+}
